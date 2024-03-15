@@ -176,6 +176,7 @@ namespace BTTH1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
             this.ClientSize = new System.Drawing.Size(476, 483);
             this.Controls.Add(this.ButtonBangCuuChuong);
             this.Controls.Add(this.ButtonSum);
@@ -191,7 +192,7 @@ namespace BTTH1
             this.Controls.Add(this.TextBoxA);
             this.Controls.Add(this.MainLabel);
             this.Name = "BAI06";
-            this.Text = "Form1";
+            this.Text = "BAI06";
             this.Load += new System.EventHandler(this.BAI06_Load);
             this.ResumeLayout(false);
             this.PerformLayout();

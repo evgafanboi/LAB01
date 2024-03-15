@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BTTH1
 {
-    public partial class BAI3 : Form
+    public partial class BAI03 : Form
     {
-        public BAI3()
+        public BAI03()
         {
             InitializeComponent();
         }

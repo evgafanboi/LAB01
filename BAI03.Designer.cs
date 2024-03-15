@@ -1,6 +1,6 @@
 ﻿namespace BTTH1
 {
-    partial class BAI3
+    partial class BAI03
     {
         /// <summary>
         /// Required designer variable.

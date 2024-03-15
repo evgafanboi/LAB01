@@ -24,56 +24,115 @@ namespace BTTH1
 
         private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
         {
-            //switch(CheckZodiacSignCase(DatePickerBirthDay.Value))
+            switch(CheckZodiacSignCase(DatePickerBirthDay.Value))
+            {
+                case 0:
+                    TextBoxZodiacSign.Text = "Bạch dương";
+                    break;
+                case 1:
+                    TextBoxZodiacSign.Text = "Kim Ngưu";
+                    break;
+                case 2:
+                    TextBoxZodiacSign.Text = "Song tử";
+                    break;
+                case 3:
+                    TextBoxZodiacSign.Text = "Cự giải";
+                    break;
+                case 4:
+                    TextBoxZodiacSign.Text = "Sư tử";
+                    break;
+                case 5:
+                    TextBoxZodiacSign.Text = "Xử nữ";
+                    break;
+                case 6:
+                    TextBoxZodiacSign.Text = "Thiên bình";
+                    break;
+                case 7:
+                    TextBoxZodiacSign.Text = "Thần nông";
+                    break;
+                case 8:
+                    TextBoxZodiacSign.Text = "Nhân mã";
+                    break;
+                case 9:
+                    TextBoxZodiacSign.Text = "Ma kết";
+                    break;
+                case 10:
+                    TextBoxZodiacSign.Text = "Bảo bình";
+                    break;
+                case 11:
+                    TextBoxZodiacSign.Text = "Song ngư";
+                    break;
+                case -1:
+                    MessageBox.Show("Input không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    break;
 
-
+            }
 
 
         }
 
-        private int CheckZodiacSignCase(DateTime Birthday)
+        private int CheckZodiacSignCase(DateTime x)
         {
+            //MessageBox.Show(Birthday.Day.ToString() + "/" + Birthday.Month.ToString() + "/" + Birthday.Year.ToString()); 
+            DateTime Birthday = new DateTime(1, x.Month, x.Day); // set year to 1 so I can compare dates easily 
 
             //Bạch dương
-            if (Birthday.Day >= 21 && Birthday.Month >= 3 && Birthday.Day <= 20 && Birthday.Month <= 4)
+            if(Birthday >= new DateTime(1,3,21) && Birthday <= new DateTime(1,4,20))
+            //if (Birthday.Day >= 21 && Birthday.Month >= 3 && Birthday.Day <= 20 && Birthday.Month <= 4)
                 return 0;
             // Kim Ngưu
-            else if (Birthday.Day >= 21 && Birthday.Month >= 4 && Birthday.Day <= 21 && Birthday.Month <= 5)
+            else if(Birthday >= new DateTime(1,4,21) && Birthday <= new DateTime(1,5,21))
+            //if (Birthday.Day >= 21 && Birthday.Month >= 4 && Birthday.Day <= 21 && Birthday.Month <= 5) look
                 return 1;
             // Song tử
-            else if (Birthday.Day >= 22 && Birthday.Month >= 5 && Birthday.Day <= 21 && Birthday.Month <= 6)
+            else if (Birthday >= new DateTime(1, 5, 22) && Birthday <= new DateTime(1, 6, 21))
+                //if (Birthday.Day >= 22 && Birthday.Month >= 5 && Birthday.Day <= 21 && Birthday.Month <= 6)
                 return 2;
             // Cự giải
-            else if (Birthday.Day >= 22 && Birthday.Month >= 6 && Birthday.Day <= 22 && Birthday.Month <= 7)
+            else if (Birthday >= new DateTime(1, 6, 22) && Birthday <= new DateTime(1, 7, 22))
+                //else if (Birthday.Day >= 22 && Birthday.Month >= 6 && Birthday.Day <= 22 && Birthday.Month <= 7)
                 return 3;
             // Sư tử
-            else if (Birthday.Day >= 23 && Birthday.Month >= 7 && Birthday.Day <= 22 && Birthday.Month <= 8)
+            else if (Birthday >= new DateTime(1, 7, 23) && Birthday <= new DateTime(1, 8, 22))
+                //else if (Birthday.Day >= 23 && Birthday.Month >= 7 && Birthday.Day <= 22 && Birthday.Month <= 8)
                 return 4;
             // Xử nữ
-            else if (Birthday.Day >= 23 && Birthday.Month >= 8 && Birthday.Day <= 23 && Birthday.Month <= 9)
+            else if (Birthday >= new DateTime(1, 8, 23) && Birthday <= new DateTime(1, 9, 23))
+                //else if (Birthday.Day >= 23 && Birthday.Month >= 8 && Birthday.Day <= 23 && Birthday.Month <= 9)
                 return 5;
             // Thiên bình
-            else if (Birthday.Day >= 24 && Birthday.Month >= 9 && Birthday.Day <= 23 && Birthday.Month <= 10)
+            else if (Birthday >= new DateTime(1, 9, 24) && Birthday <= new DateTime(1, 10, 23))
+                //else if (Birthday.Day >= 24 && Birthday.Month >= 9 && Birthday.Day <= 23 && Birthday.Month <= 10)
                 return 6;
             // Thần nông
-            else if (Birthday.Day >= 24 && Birthday.Month >= 10 && Birthday.Day <= 22 && Birthday.Month <= 11)
+            else if (Birthday >= new DateTime(1, 10, 24) && Birthday <= new DateTime(1, 11, 22))
+                //else if (Birthday.Day >= 24 && Birthday.Month >= 10 && Birthday.Day <= 22 && Birthday.Month <= 11)
                 return 7;
             // Nhân mã
-            else if (Birthday.Day >= 23 && Birthday.Month >= 11 && Birthday.Day <= 21 && Birthday.Month <= 12)
+            else if (Birthday >= new DateTime(1, 11, 23) && Birthday <= new DateTime(1, 12, 21))
+                //else if (Birthday.Day >= 23 && Birthday.Month >= 11 && Birthday.Day <= 21 && Birthday.Month <= 12)
                 return 8;
             // Ma kết
-            else if ((Birthday.Day >= 22 && Birthday.Day <= 31 && Birthday.Month == 12) || (Birthday.Day >= 1 && Birthday.Day <= 20 && Birthday.Month == 1))
+            else if (Birthday >= new DateTime(1, 12, 22) || Birthday <= new DateTime(1, 1, 20))
+                //else if ((Birthday.Day >= 22 && Birthday.Day <= 31 && Birthday.Month == 12) || (Birthday.Day >= 1 && Birthday.Day <= 20 && Birthday.Month == 1))
                 return 9;
             // Bảo bình
-            else if (Birthday.Day >= 21 && Birthday.Month == 1 && Birthday.Day <= 19 && Birthday.Month <= 2)
+            else if (Birthday >= new DateTime(1, 1, 21) && Birthday <= new DateTime(1, 2, 19))
+                //else if (Birthday.Day >= 21 && Birthday.Month == 1 && Birthday.Day <= 19 && Birthday.Month <= 2)
                 return 10;
             // Song ngư
-            else if (Birthday.Day >= 20 && Birthday.Month >= 2 && Birthday.Day <= 20 && Birthday.Month <= 3)
+            else if (Birthday >= new DateTime(1, 2, 20) && Birthday <= new DateTime(1, 3, 20))
+                //else if (Birthday.Day >= 20 && Birthday.Month >= 2 && Birthday.Day <= 20 && Birthday.Month <= 3)
                 return 11;
             
             // handle exception
             else
                 return -1;
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

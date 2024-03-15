@@ -31,6 +31,10 @@ namespace BTTH1
         {
             this.DatePickerBirthDay = new System.Windows.Forms.DateTimePicker();
             this.MainLabel = new System.Windows.Forms.Label();
+            this.LabelZodiac = new System.Windows.Forms.Label();
+            this.TextBoxZodiacSign = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // DatePickerBirthDay
@@ -56,15 +60,46 @@ namespace BTTH1
             this.MainLabel.Text = "Bai07";
             this.MainLabel.Click += new System.EventHandler(this.MainLabel_Click);
             // 
+            // LabelZodiac
+            // 
+            this.LabelZodiac.AutoSize = true;
+            this.LabelZodiac.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelZodiac.Location = new System.Drawing.Point(33, 154);
+            this.LabelZodiac.Name = "LabelZodiac";
+            this.LabelZodiac.Size = new System.Drawing.Size(208, 20);
+            this.LabelZodiac.TabIndex = 2;
+            this.LabelZodiac.Text = "Cung hoàng đạo của bạn là:";
+            this.LabelZodiac.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // TextBoxZodiacSign
+            // 
+            this.TextBoxZodiacSign.Location = new System.Drawing.Point(272, 154);
+            this.TextBoxZodiacSign.Name = "TextBoxZodiacSign";
+            this.TextBoxZodiacSign.ReadOnly = true;
+            this.TextBoxZodiacSign.Size = new System.Drawing.Size(100, 20);
+            this.TextBoxZodiacSign.TabIndex = 3;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Location = new System.Drawing.Point(37, 205);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(335, 187);
+            this.pictureBox1.TabIndex = 4;
+            this.pictureBox1.TabStop = false;
+            // 
             // BAI07
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(401, 423);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.TextBoxZodiacSign);
+            this.Controls.Add(this.LabelZodiac);
             this.Controls.Add(this.MainLabel);
             this.Controls.Add(this.DatePickerBirthDay);
             this.Name = "BAI07";
             this.Text = "BAI07";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -74,5 +109,8 @@ namespace BTTH1
 
         private System.Windows.Forms.DateTimePicker DatePickerBirthDay;
         private System.Windows.Forms.Label MainLabel;
+        private System.Windows.Forms.Label LabelZodiac;
+        private System.Windows.Forms.TextBox TextBoxZodiacSign;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

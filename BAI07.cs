@@ -28,42 +28,55 @@ namespace BTTH1
             {
                 case 0:
                     TextBoxZodiacSign.Text = "Bạch dương";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[0];
                     break;
                 case 1:
                     TextBoxZodiacSign.Text = "Kim Ngưu";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[1];
                     break;
                 case 2:
                     TextBoxZodiacSign.Text = "Song tử";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[2];
                     break;
                 case 3:
                     TextBoxZodiacSign.Text = "Cự giải";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[3];
                     break;
                 case 4:
                     TextBoxZodiacSign.Text = "Sư tử";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[4];
                     break;
                 case 5:
                     TextBoxZodiacSign.Text = "Xử nữ";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[5];
                     break;
                 case 6:
                     TextBoxZodiacSign.Text = "Thiên bình";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[6];
                     break;
                 case 7:
                     TextBoxZodiacSign.Text = "Thần nông";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[7];
                     break;
                 case 8:
                     TextBoxZodiacSign.Text = "Nhân mã";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[8];
                     break;
                 case 9:
                     TextBoxZodiacSign.Text = "Ma kết";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[9];
                     break;
                 case 10:
                     TextBoxZodiacSign.Text = "Bảo bình";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[10];
                     break;
                 case 11:
                     TextBoxZodiacSign.Text = "Song ngư";
+                    PictureZodiacSign.Image = ImageListZodiacSign.Images[11];
                     break;
                 case -1:
                     MessageBox.Show("Input không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    PictureZodiacSign.Image = null;
                     break;
 
             }

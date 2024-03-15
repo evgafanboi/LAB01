@@ -29,12 +29,15 @@ namespace BTTH1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BAI07));
             this.DatePickerBirthDay = new System.Windows.Forms.DateTimePicker();
             this.MainLabel = new System.Windows.Forms.Label();
             this.LabelZodiac = new System.Windows.Forms.Label();
             this.TextBoxZodiacSign = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PictureZodiacSign = new System.Windows.Forms.PictureBox();
+            this.ImageListZodiacSign = new System.Windows.Forms.ImageList(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.PictureZodiacSign)).BeginInit();
             this.SuspendLayout();
             // 
             // DatePickerBirthDay
@@ -79,27 +82,45 @@ namespace BTTH1
             this.TextBoxZodiacSign.Size = new System.Drawing.Size(100, 20);
             this.TextBoxZodiacSign.TabIndex = 3;
             // 
-            // pictureBox1
+            // PictureZodiacSign
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(37, 205);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(335, 187);
-            this.pictureBox1.TabIndex = 4;
-            this.pictureBox1.TabStop = false;
+            this.PictureZodiacSign.Location = new System.Drawing.Point(37, 205);
+            this.PictureZodiacSign.Name = "PictureZodiacSign";
+            this.PictureZodiacSign.Size = new System.Drawing.Size(388, 274);
+            this.PictureZodiacSign.TabIndex = 4;
+            this.PictureZodiacSign.TabStop = false;
+            // 
+            // ImageListZodiacSign
+            // 
+            this.ImageListZodiacSign.ImageStream = ((System.Windows.Forms.ImageListStreamer)(resources.GetObject("ImageListZodiacSign.ImageStream")));
+            this.ImageListZodiacSign.TransparentColor = System.Drawing.Color.Transparent;
+            this.ImageListZodiacSign.Images.SetKeyName(0, "0.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(1, "1.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(2, "2.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(3, "3.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(4, "4.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(5, "5.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(6, "6.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(7, "7.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(8, "8.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(9, "9.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(10, "10.jpg");
+            this.ImageListZodiacSign.Images.SetKeyName(11, "11.jpg");
             // 
             // BAI07
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(401, 423);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(477, 521);
+            this.Controls.Add(this.PictureZodiacSign);
             this.Controls.Add(this.TextBoxZodiacSign);
             this.Controls.Add(this.LabelZodiac);
             this.Controls.Add(this.MainLabel);
             this.Controls.Add(this.DatePickerBirthDay);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BAI07";
             this.Text = "BAI07";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureZodiacSign)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -111,6 +132,7 @@ namespace BTTH1
         private System.Windows.Forms.Label MainLabel;
         private System.Windows.Forms.Label LabelZodiac;
         private System.Windows.Forms.TextBox TextBoxZodiacSign;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PictureZodiacSign;
+        private System.Windows.Forms.ImageList ImageListZodiacSign;
     }
 }

@@ -32,6 +32,12 @@ namespace BTTH1
             // Giai thừa
             if (ButtonGiaiThua.Checked)
             {
+                // handle negative factorial
+                if (B > A)
+                {
+                    MessageBox.Show("Input không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 if (A - B == 0)
                 {
                     TextBoxAnswer.Text = "1";

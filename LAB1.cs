@@ -19,14 +19,14 @@ namespace BTTH1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            BAI2 f2 = new BAI2();
+            BAI02 f2 = new BAI02();
             f2.Show();
 
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            BAI1 f1 = new BAI1();
+            BAI01 f1 = new BAI01();
             f1.Show();
         }
 
@@ -37,8 +37,20 @@ namespace BTTH1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            BAI3 f3 = new BAI3();
+            BAI03 f3 = new BAI03();
             f3.Show();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            BAI04 f4 = new BAI04();
+            f4.Show();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            BAI06 f6 = new BAI06();
+            f6.Show();
         }
     }
 }

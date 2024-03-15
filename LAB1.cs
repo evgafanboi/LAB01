@@ -40,5 +40,21 @@ namespace BTTH1
             BAI3 f3 = new BAI3();
             f3.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            BAI06 fBai06 = new BAI06();
+            fBai06.Show();
+        }
     }
 }

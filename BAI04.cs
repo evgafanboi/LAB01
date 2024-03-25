@@ -108,6 +108,13 @@ namespace BTTH1
                         }
                         else if (so[i] - '0' == 1)
                         { //special case xxxx1x -> doc thanh mười xx 
+                            if (so[i+1] - '0' == 5)   //15 -> muoi lam do tieng viet qua lo?
+                            {
+                                oup += "mười lăm";
+                                i++;   //skip gia tri
+                                pos -= 2;
+                                continue;
+                            }
                             oup += "mười " + DocSo(so[i + 1] - '0', false);
                             i++;   //skip gia tri
                             pos -= 2;
@@ -123,15 +130,11 @@ namespace BTTH1
                             oup += "tỉ ";
                             tmp -= 9;
                         }
-                        if (so[tmp - 1] - '0' == 0)
+                        if (so[i] - '0' == 0)
                         {
-                            while (so[tmp - 1] - '0' == 0)
-                            {
-                                tmp--;
-                                i++;
-                            }
-                            i--;
-                            pos = tmp;
+                            oup += "không";
+                            pos--;
+                            continue;
                         }
                     }
                     else if (pos % 9 == 6)  //pos tai vi tri gia tri trieu
@@ -143,15 +146,24 @@ namespace BTTH1
                             oup += "tỉ ";
                             tmp -= 9;
                         }
-                        if (so[tmp - 1] - '0' == 0)
+                        int rem = (int)Math.Abs(inp % Math.Pow(10, pos));    //xu ly truong hop lmao nhu x0000xx
+                        if (rem < 1000)
                         {
-                            while (so[tmp - 1] - '0' == 0)
+                            i = len - 3;
+                            pos = 2;
+                            if (so[i] == '0')
                             {
-                                tmp--;
-                                i++;
+                                oup += "không";
+                                continue;
                             }
-                            i--;
-                            pos = tmp;
+                            oup += DocSo(so[i] - '0', false);
+                            continue;
+                        }
+                        if (so[i] - '0' == 0)
+                        {
+                            oup += "không";
+                            pos--;
+                            continue;
                         }
                     }
                     else if (pos % 9 == 0 && pos != 0)  //pos tai vi tri gia tri ti
@@ -163,15 +175,37 @@ namespace BTTH1
                             oup += "tỉ ";
                             tmp -= 9;
                         }
-                        if (so[tmp - 1] - '0' == 0)
+                        int rem = (int)Math.Abs(inp % Math.Pow(10, pos));    //xu ly truong hop lmao nhu x0000000xx
+                        if (rem < 1000)
                         {
-                            while (so[tmp - 1] - '0' == 0)
+                            i = len - 3;
+                            pos = 2;
+                            if (so[i] == '0')
                             {
-                                tmp--;
-                                i++;
+                                oup += "không";
+                                continue;
                             }
-                            i--;
-                            pos = tmp;
+                            oup += DocSo(so[i] - '0', false);
+                            continue;
+                        }
+                        else if (rem >=1000 || rem < 1000000)
+                        {
+                            i = len - 6;
+                            pos = 5;
+                            if (so[i] == '0')
+                            {
+                                oup += "không";
+                                continue;
+                            }
+                            oup += DocSo(so[i] - '0', false);
+                            continue;
+                        }
+                        //beta test 
+                        if (so[i] - '0' == 0)
+                        {
+                            oup += "không";
+                            pos--;
+                            continue;
                         }
                     }
 

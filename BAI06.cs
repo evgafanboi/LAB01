@@ -55,6 +55,12 @@ namespace BTTH1
             // Tổng S
             if (ButtonSum.Checked)
             {
+                if(B < 1)
+                {
+                    MessageBox.Show("Input không hợp lệ", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
                 double Answer = 0;
                 for(int i = 1; i <= B; i++)
                 {

@@ -49,7 +49,8 @@ namespace BTTH1
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            BAI05 f5 = new BAI05();
+            f5.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)

@@ -66,34 +66,6 @@ namespace BTTH1
             else
                 return 1;
         }
-        private string GetRoomForSeat(string seat)
-        {
-            // Duyệt qua từng phòng chiếu
-            foreach (var room in movieroomInfo)
-            {
-                // Nếu ghế thuộc phòng chiếu, trả về tên phòng chiếu
-                if (room.Value.Contains(seat))
-                {
-                    return room.Key;
-                }
-            }
-
-            // Không tìm thấy ghế trong phòng chiếu nào, trả về null
-            return null;
-        }
-
-        private string GetMovieForRoom(string room)
-        {
-            // Tìm tên phim dựa trên tên phòng chiếu
-            if (movieroomInfo.ContainsKey(room))
-            {
-                return room;
-            }
-
-            // Không tìm thấy phim cho phòng chiếu, trả về null
-            return null;
-        }
-
         private double GetBasePriceForMovie(string movie)
         {
             // Lấy giá vé chuẩn của phim

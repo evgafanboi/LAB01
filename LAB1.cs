@@ -70,7 +70,8 @@ namespace BTTH1
             Bai08 fBai08 = new Bai08();
             fBai08.Show();
         }
-         private void button9_Click(object sender, EventArgs e)
+
+        private void button9_Click_1(object sender, EventArgs e)
         {
             BAI09 fBai09 = new BAI09();
             fBai09.Show();

@@ -57,30 +57,75 @@ namespace BTTH1
             {
                 if (negative)
                 {
-                    oup += "Âm mười ";
-                    oup += DocSo(so[1] - '0', false);
+                    if (so[1] - '0' == 5)   //15 -> muoi lam do tieng viet qua lo?
+                    {
+                        oup += "Âm mười lăm";
+                    }
+                    else
+                    {
+                        oup += "Âm mười ";
+                        oup += DocSo(so[1] - '0', false);
+                    }
                 }
                 else
                 {
                     oup += "Mười ";
+                    if (so[1] - '0' == 5)   //15 -> muoi lam do tieng viet qua lo?
+                    {
+                        oup += "lăm";
+                    }
+                    else
                     oup += DocSo(so[1] - '0', false);
                 }
             }
             else
             {
+                int i = 1; 
                 int pos = len - 1; //tra vi tri cua chu so de them cac phu am
                 if (negative)
                 {
                     oup += "Âm ";
-                    oup += DocSo(so[0] - '0', false);
+                    if (so[0] - '0' == 1 && pos % 3 == 1)
+                    {
+                        oup += "mười ";
+                        if (so[1] - '0' == 5)   //15 -> muoi lam do tieng viet qua lo?
+                        {
+                            oup += "lăm";
+                            i++;   //skip gia tri
+                            pos --;
+                        }
+                        else
+                        {
+                            oup += DocSo(so[1] - '0', false);
+                        }
+                    }
+                    else
+                        oup += DocSo(so[0] - '0', false);
                 }
                 else
-                    oup += DocSo(so[0] - '0', true);
-                for (int i = 1; i < len; i++)
+                {
+                    if (so[0] - '0' == 1 && pos % 3 == 1)
+                    {
+                        oup += "Mười ";
+                        if (so[1] - '0' == 5)   //tuong tu 15-> muoi lam
+                        {
+                            oup += "lăm";
+                            i++;   //skip gia tri
+                            pos --;
+                        }
+                        else
+                        {
+                            oup += DocSo(so[1] - '0', false);
+                        }
+                    }
+                    else
+                        oup += DocSo(so[0] - '0', true);
+                }
+                for (; i < len; i++)
                 {
                     if (pos % 3 == 1)
                     {  //pos tai vi tri gia tri hang chuc
-
+                        if(i !=1 && so[0]!=1)
                         oup += " mươi ";
                         if (so[i] - '0' == 1)
                         { //special case xxxxx1.xxx -> doc thanh xx mươi mốt 
@@ -130,6 +175,11 @@ namespace BTTH1
                             oup += "tỉ ";
                             tmp -= 9;
                         }
+                        int rem = (int)Math.Abs(inp % Math.Pow(10, pos));
+                        if (rem == 0)
+                        {
+                            break;
+                        }
                         if (so[i] - '0' == 0)
                         {
                             oup += "không";
@@ -147,7 +197,11 @@ namespace BTTH1
                             tmp -= 9;
                         }
                         int rem = (int)Math.Abs(inp % Math.Pow(10, pos));    //xu ly truong hop lmao nhu x0000xx
-                        if (rem < 1000)
+                        if (rem == 0)
+                        {
+                            break;
+                        }
+                        else if (rem < 1000)
                         {
                             i = len - 3;
                             pos = 2;
@@ -158,6 +212,10 @@ namespace BTTH1
                             }
                             oup += DocSo(so[i] - '0', false);
                             continue;
+                        }
+                        else if (rem == 0)
+                        {
+                            break;
                         }
                         if (so[i] - '0' == 0)
                         {
@@ -176,7 +234,11 @@ namespace BTTH1
                             tmp -= 9;
                         }
                         int rem = (int)Math.Abs(inp % Math.Pow(10, pos));    //xu ly truong hop lmao nhu x0000000xx
-                        if (rem < 1000)
+                        if (rem == 0)
+                        {
+                            break;
+                        }
+                        else if (rem < 1000)
                         {
                             i = len - 3;
                             pos = 2;

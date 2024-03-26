@@ -132,7 +132,17 @@
             this.button8.TabIndex = 7;
             this.button8.Text = "Bài 8";
             this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
+            this.button8.Click += new System.EventHandler(this.button8_Click); 
+            //
+            // button9
+            //
+            this.button9.Location = new System.Drawing.Point(460, 53);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(100, 541);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "Bài 9";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // LAB1
             // 

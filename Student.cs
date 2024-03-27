@@ -9,7 +9,7 @@ namespace BTTH1
     class Student
     {
         private string Name;
-        List<float> ScoreArr;
+        private List<float> ScoreArr;
         public Student(string Name = "")
         {
             this.Name = Name;

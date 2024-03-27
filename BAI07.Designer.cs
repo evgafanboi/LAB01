@@ -91,6 +91,7 @@ namespace BTTH1
             this.PictureZodiacSign.Size = new System.Drawing.Size(388, 274);
             this.PictureZodiacSign.TabIndex = 4;
             this.PictureZodiacSign.TabStop = false;
+            this.PictureZodiacSign.Click += new System.EventHandler(this.PictureZodiacSign_Click);
             // 
             // ImageListZodiacSign
             // 

@@ -207,10 +207,6 @@ namespace BTTH1
                                 oup += DocSo(so[i] - '0', false);
                                 continue;
                             }
-                            else if (rem == 0)
-                            {
-                                break;
-                            }
                             if (so[i] - '0' == 0)
                             {
                                 oup += "không";
@@ -244,7 +240,7 @@ namespace BTTH1
                                 oup += DocSo(so[i] - '0', false);
                                 continue;
                             }
-                            else if (rem >= 1000 || rem < 1000000)
+                            else if (rem >= 1000 && rem < 1000000)
                             {
                                 i = len - 6;
                                 pos = 5;

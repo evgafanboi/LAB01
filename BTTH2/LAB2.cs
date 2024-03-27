@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace BTTH2
 {
-    public partial class Form1 : Form
+    public partial class LAB2 : Form
     {
-        public Form1()
+        public LAB2()
         {
             InitializeComponent();
         }

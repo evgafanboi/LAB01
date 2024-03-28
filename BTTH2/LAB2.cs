@@ -32,5 +32,11 @@ namespace BTTH2
         {
             Close();
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            BAI04 f4 = new BAI04();
+            f4.Show();
+        }
     }
 }

@@ -10,3 +10,15 @@ C:\Users\HP\LAB01\BTTH2\bin\Debug\BTTH2.exe
 C:\Users\HP\LAB01\BTTH2\bin\Debug\BTTH2.pdb
 C:\Users\HP\LAB01\BTTH2\obj\Debug\BTTH2.exe
 C:\Users\HP\LAB01\BTTH2\obj\Debug\BTTH2.pdb
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\bin\Debug\BTTH2.exe.config
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\bin\Debug\BTTH2.exe
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\bin\Debug\BTTH2.pdb
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.csproj.AssemblyReference.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.BAI01.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.LAB2.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.Properties.Resources.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.csproj.GenerateResource.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.csproj.CoreCompileInputs.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.exe
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.pdb
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.BAI04.resources

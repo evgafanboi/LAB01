@@ -1,0 +1,158 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:BAI04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:BAI04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:BAI04.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\btth2\\bai01.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:bai01.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\output1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:output1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:BAI01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BAI01.Designer.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.Designer.cs",
+              "RelativeDocumentMoniker": "BAI01.Designer.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.Designer.cs",
+              "RelativeToolTip": "BAI01.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:35:45.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BAI04.Designer.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.Designer.cs",
+              "RelativeDocumentMoniker": "BAI04.Designer.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.Designer.cs",
+              "RelativeToolTip": "BAI04.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:35:43.349Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BAI04.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs",
+              "RelativeDocumentMoniker": "BAI04.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs",
+              "RelativeToolTip": "BAI04.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAApwB8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:17:06.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BAI04.cs [Design]",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs",
+              "RelativeDocumentMoniker": "BAI04.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs [Design]",
+              "RelativeToolTip": "BAI04.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T13:07:15.707Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "output1.txt",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\output1.txt",
+              "RelativeDocumentMoniker": "output1.txt",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\output1.txt",
+              "RelativeToolTip": "output1.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-03-28T09:50:27.884Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BAI01.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.cs",
+              "RelativeDocumentMoniker": "BAI01.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.cs",
+              "RelativeToolTip": "BAI01.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwB4AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T09:50:28.021Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LAB2.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs",
+              "RelativeDocumentMoniker": "LAB2.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs",
+              "RelativeToolTip": "LAB2.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAApwCYAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T09:50:28.173Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LAB2.cs [Design]",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs",
+              "RelativeDocumentMoniker": "LAB2.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs [Design]",
+              "RelativeToolTip": "LAB2.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-28T09:50:28.173Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

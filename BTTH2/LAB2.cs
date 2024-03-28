@@ -16,5 +16,21 @@ namespace BTTH2
         {
             InitializeComponent();
         }
+
+        private void LAB2_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            BAI01 f1 = new BAI01();
+            f1.Show();
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

@@ -58,6 +58,7 @@
             this.ButtonRead = new System.Windows.Forms.Button();
             this.ButtonAdd = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
+            this.ComboBoxStudent = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // TextBoxScore1
@@ -328,11 +329,24 @@
             this.button1.Text = "Add";
             this.button1.UseVisualStyleBackColor = true;
             // 
+            // ComboBoxStudent
+            // 
+            this.ComboBoxStudent.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.ComboBoxStudent.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.ListItems;
+            this.ComboBoxStudent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ComboBoxStudent.FormattingEnabled = true;
+            this.ComboBoxStudent.Location = new System.Drawing.Point(359, 505);
+            this.ComboBoxStudent.Name = "ComboBoxStudent";
+            this.ComboBoxStudent.Size = new System.Drawing.Size(190, 24);
+            this.ComboBoxStudent.TabIndex = 38;
+            this.ComboBoxStudent.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
             // BAI04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 561);
+            this.Controls.Add(this.ComboBoxStudent);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.ButtonAdd);
             this.Controls.Add(this.ButtonRead);
@@ -402,5 +416,6 @@
         private System.Windows.Forms.Button ButtonRead;
         private System.Windows.Forms.Button ButtonAdd;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.ComboBox ComboBoxStudent;
     }
 }

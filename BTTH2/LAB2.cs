@@ -38,5 +38,11 @@ namespace BTTH2
             BAI04 f4 = new BAI04();
             f4.Show();
         }
+        
+        private void button6_Click(object sender, EventArgs e)
+        {
+            BAI03 f3 = new BAI03();
+            f3.Show();
+        }
     }
 }

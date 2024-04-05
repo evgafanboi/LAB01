@@ -3,36 +3,24 @@
   "WorkspaceRootPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:BAI04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\btth2\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\btth2\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:BAI04.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\bai01.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:bai01.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:BAI01.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\output1.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:output1.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\btth2\\studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\btth2\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,7 +30,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -57,29 +45,33 @@
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BAI01.Designer.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.Designer.cs",
-              "RelativeDocumentMoniker": "BAI01.Designer.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.Designer.cs",
-              "RelativeToolTip": "BAI01.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 4,
+              "Title": "Student.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\Student.cs",
+              "RelativeDocumentMoniker": "Student.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\Student.cs",
+              "RelativeToolTip": "Student.cs",
+              "ViewState": "AQIAAEMAAAAAAAAAAAAYwFgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:35:45.486Z",
+              "WhenOpened": "2024-04-05T04:15:07.439Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BAI04.Designer.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.Designer.cs",
-              "RelativeDocumentMoniker": "BAI04.Designer.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.Designer.cs",
-              "RelativeToolTip": "BAI04.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "StudentList.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\StudentList.cs",
+              "RelativeDocumentMoniker": "StudentList.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\StudentList.cs",
+              "RelativeToolTip": "StudentList.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAeAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:35:43.349Z",
+              "WhenOpened": "2024-04-05T03:26:19.698Z",
               "EditorCaption": ""
             },
             {
@@ -90,9 +82,9 @@
               "RelativeDocumentMoniker": "BAI04.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs*",
               "RelativeToolTip": "BAI04.cs*",
-              "ViewState": "AQIAAE4AAAAAAAAAAAAUwGIAAAAAAAAA",
+              "ViewState": "AQIAAOkAAAAAAAAAAADwv/8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T13:17:06.828Z",
+              "WhenOpened": "2024-04-05T01:47:32.995Z",
               "EditorCaption": ""
             },
             {
@@ -109,51 +101,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "output1.txt",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\output1.txt",
-              "RelativeDocumentMoniker": "output1.txt",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\output1.txt",
-              "RelativeToolTip": "output1.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-03-28T09:50:27.884Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BAI01.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.cs",
-              "RelativeDocumentMoniker": "BAI01.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI01.cs",
-              "RelativeToolTip": "BAI01.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAiwBgAAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T09:50:28.021Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "LAB2.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs",
-              "RelativeDocumentMoniker": "LAB2.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs",
-              "RelativeToolTip": "LAB2.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAApwCYAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T09:50:28.173Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 3,
               "Title": "LAB2.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs",
               "RelativeDocumentMoniker": "LAB2.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs [Design]",
               "RelativeToolTip": "LAB2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T09:50:28.173Z"
+              "WhenOpened": "2024-03-28T09:50:28.173Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

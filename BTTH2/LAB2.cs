@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using WindowsFormsApplication2;
 
 namespace BTTH2
 {
@@ -43,6 +44,12 @@ namespace BTTH2
         {
             BAI03 f3 = new BAI03();
             f3.Show();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            BAI02 f2 = new BAI02();
+            f2.Show();
         }
     }
 }

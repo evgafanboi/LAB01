@@ -24,3 +24,4 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.pdb
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.BAI04.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.BAI03.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\WindowsFormsApplication2.BAI02.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\BTTH2\obj\Debug\BTTH2.BAI07.resources

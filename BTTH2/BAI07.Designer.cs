@@ -30,8 +30,8 @@
         {
             this.TreeViewFileTree = new System.Windows.Forms.TreeView();
             this.TextBoxPath = new System.Windows.Forms.TextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.PictureBoxImage = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxImage)).BeginInit();
             this.SuspendLayout();
             // 
             // TreeViewFileTree
@@ -41,6 +41,7 @@
             this.TreeViewFileTree.Size = new System.Drawing.Size(211, 396);
             this.TreeViewFileTree.TabIndex = 0;
             this.TreeViewFileTree.AfterExpand += new System.Windows.Forms.TreeViewEventHandler(this.TreeViewFileTree_AfterExpand);
+            this.TreeViewFileTree.DoubleClick += new System.EventHandler(this.TreeViewFileTree_DoubleClick);
             // 
             // TextBoxPath
             // 
@@ -50,26 +51,27 @@
             this.TextBoxPath.Size = new System.Drawing.Size(725, 20);
             this.TextBoxPath.TabIndex = 1;
             // 
-            // pictureBox1
+            // PictureBoxImage
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(229, 42);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(508, 396);
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
+            this.PictureBoxImage.Location = new System.Drawing.Point(229, 42);
+            this.PictureBoxImage.Name = "PictureBoxImage";
+            this.PictureBoxImage.Size = new System.Drawing.Size(508, 396);
+            this.PictureBoxImage.TabIndex = 2;
+            this.PictureBoxImage.TabStop = false;
             // 
             // BAI07
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(833, 457);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(750, 451);
+            this.Controls.Add(this.PictureBoxImage);
             this.Controls.Add(this.TextBoxPath);
             this.Controls.Add(this.TreeViewFileTree);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "BAI07";
             this.Text = "BAI07";
             this.Load += new System.EventHandler(this.BAI07_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PictureBoxImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -79,6 +81,6 @@
 
         private System.Windows.Forms.TreeView TreeViewFileTree;
         private System.Windows.Forms.TextBox TextBoxPath;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox PictureBoxImage;
     }
 }

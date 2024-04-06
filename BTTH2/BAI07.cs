@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Xml.Linq;
+using static System.Net.WebRequestMethods;
 
 namespace BTTH2
 {
@@ -16,15 +18,14 @@ namespace BTTH2
         public BAI07()
         {
             InitializeComponent();
-            //TreeNode root = new TreeNode("C:\\");
             //set node to current user desktop
-            //TreeNode root = new TreeNode(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
-            TreeNode root = new TreeNode("D:\\Tai_Lieu_Hoc\\LTHDT");
-
-
+            TreeNode root = new TreeNode(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
+            root.Name = root.Text;
             TreeViewFileTree.Nodes.Add(root);
+            // add dummy node to the root node
+            root.Nodes.Add(new TreeNode());
             TreeViewFileTree_LoadExplorer(root);
-            
+
         }
 
         private void TreeViewFileTree_LoadExplorer(TreeNode root)
@@ -36,15 +37,19 @@ namespace BTTH2
                 return;
             }
 
+            // clear all dummy children nodes
+            root.Nodes.Clear();
+
             // if root is a file, return
 
-            if (Directory.Exists(root.Text))
+            if (Directory.Exists(root.Name))
             {
                 try
                 {
-                    foreach (string files in Directory.EnumerateFiles(root.Text))
+                    foreach (string files in Directory.EnumerateFiles(root.Name))
                     {
                         TreeNode temp2 = new TreeNode(Path.GetFileName(files));
+                        temp2.Name = files;
                         root.Nodes.Add(temp2);
                     }
 
@@ -59,14 +64,18 @@ namespace BTTH2
                 // same for directories
                 try
                 {
-                    foreach (string directory in Directory.EnumerateDirectories(root.Text))
+                    foreach (string directory in Directory.EnumerateDirectories(root.Name))
                     {
-                        TreeNode temp = new TreeNode(Path.GetDirectoryName(directory));
+                        TreeNode temp = new TreeNode(new DirectoryInfo(directory).Name);
+                        temp.Name = directory;
                         root.Nodes.Add(temp);
-                        // need to fix why it doesn't show the subdirectories                        
-                        .//
-                        //
-                        //
+                        
+                        // check if the current directory has subdirectories
+                        if (Directory.EnumerateDirectories(directory).Count() > 0 || Directory.EnumerateFiles(directory).Count() > 0)
+                        {
+                            // add a dummy node to the current node
+                            temp.Nodes.Add(new TreeNode());
+                        }
 
                     }
                 }
@@ -90,7 +99,23 @@ namespace BTTH2
 
         private void TreeViewFileTree_AfterExpand(object sender, TreeViewEventArgs e)
         {
-            TreeViewFileTree_LoadExplorer(e.Node);
+                TreeViewFileTree_LoadExplorer(e.Node);
+                TextBoxPath.Text = e.Node.Name;
         }
+
+        private void TreeViewFileTree_DoubleClick(object sender, EventArgs e)
+        {
+            // check if user double click on a node
+            if (TreeViewFileTree.SelectedNode != null)
+            {
+                // if a node is a image file, show it in the picture box
+                if (Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".jpg" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".png" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".bmp" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".tiff" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".gif")
+                    PictureBoxImage.Image = Image.FromFile(TreeViewFileTree.SelectedNode.Name);
+                else
+                    PictureBoxImage.Image = null;
+            }
+
+        }
+
     }
 }

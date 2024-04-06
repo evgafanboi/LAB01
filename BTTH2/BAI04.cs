@@ -110,12 +110,35 @@ namespace BTTH2
                 fs = new FileStream("StudentList.txt", FileMode.Create, FileAccess.Write);
                         bf.Serialize(fs, studentList);
                         fs.Close();
+
+                //clear all read comboboxes 
+                ComboBoxStudent.Items.Clear();
+                TextBoxOutput.Text = "";
+
+                //print the list to the output textbox
+                for (int i = 0; i < studentList.NumberOfStudent(); i++)
+                {
+                    TextBoxOutput.Text += "Sinh viên " + (i + 1).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Tên: " + studentList.ReadStudent(i).ReadName() + "\r\n";
+                    TextBoxOutput.Text += "MSSV: " + studentList.ReadStudent(i).ReadID() + "\r\n";
+                    TextBoxOutput.Text += "SDT: " + studentList.ReadStudent(i).ReadPhoneNum() + "\r\n";
+                    TextBoxOutput.Text += "Điểm 1: " + studentList.ReadStudent(i).ReadScore(0).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Điểm 2: " + studentList.ReadStudent(i).ReadScore(1).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Điểm 3: " + studentList.ReadStudent(i).ReadScore(2).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Average Score: " + studentList.ReadStudent(i).AvgScore().ToString() + "\r\n";
+                    TextBoxOutput.Text += "\r\n";
+                }
+                
+                // call read button to read the list and add the student to the combobox
+                ButtonRead_Click(sender, e);
+                
                 
             }
             catch (Exception)
             {
                 //show err and return
                 MessageBox.Show("Lỗi khi ghi file", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
             }
            
 
@@ -254,6 +277,10 @@ namespace BTTH2
                 ComboBoxStudent.Enabled = false;
                 ButtonDelete.Enabled = false;
                 ComboBoxStudent.Text = "";
+                TextBoxOutput.Text = "";
+
+                //then call button read to read the list and add the student to the combobox
+                ButtonRead_Click(sender, e);
             }
             catch (Exception)
             {
@@ -284,6 +311,10 @@ namespace BTTH2
 
         private void ButtonRead_Click(object sender, EventArgs e)
         {
+            //clear 
+            ComboBoxStudent.Items.Clear();
+            TextBoxOutput.Text = "";
+
             // try to read the student list from the file
             try
             {
@@ -298,6 +329,22 @@ namespace BTTH2
 
                 //enable the combobox to select student
                 ComboBoxStudent.Enabled = true;
+
+                
+
+                //print the list to the output textbox
+                for (int i = 0; i < StudentList.NumberOfStudent(); i++)
+                {
+                    TextBoxOutput.Text += "Sinh viên " + (i + 1).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Tên: " + StudentList.ReadStudent(i).ReadName() + "\r\n";
+                    TextBoxOutput.Text += "MSSV: " + StudentList.ReadStudent(i).ReadID() + "\r\n";
+                    TextBoxOutput.Text += "SDT: " + StudentList.ReadStudent(i).ReadPhoneNum() + "\r\n";
+                    TextBoxOutput.Text += "Điểm 1: " + StudentList.ReadStudent(i).ReadScore(0).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Điểm 2: " + StudentList.ReadStudent(i).ReadScore(1).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Điểm 3: " + StudentList.ReadStudent(i).ReadScore(2).ToString() + "\r\n";
+                    TextBoxOutput.Text += "Average Score: " + StudentList.ReadStudent(i).AvgScore().ToString() + "\r\n";
+                    TextBoxOutput.Text += "\r\n";
+                }
             }
             catch (Exception)
             {

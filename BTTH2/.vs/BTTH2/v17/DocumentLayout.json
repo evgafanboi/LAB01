@@ -11,16 +11,16 @@
       "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\btth2\\studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:studentlist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:LAB2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\btth2\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F8D5EECC-C804-494B-ABCB-37E11EC7E6B2}|BTTH2.csproj|solutionrelative:student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,13 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Student.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\Student.cs",
               "RelativeDocumentMoniker": "Student.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\Student.cs",
               "RelativeToolTip": "Student.cs",
-              "ViewState": "AQIAAEMAAAAAAAAAAAAYwFgAAAAJAAAA",
+              "ViewState": "AQIAADkAAAAAAAAAAAAmwFgAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T04:15:07.439Z",
               "EditorCaption": ""
@@ -69,7 +69,7 @@
               "RelativeDocumentMoniker": "StudentList.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\StudentList.cs",
               "RelativeToolTip": "StudentList.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAeAAAA",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAQwC8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T03:26:19.698Z",
               "EditorCaption": ""
@@ -80,9 +80,9 @@
               "Title": "BAI04.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs",
               "RelativeDocumentMoniker": "BAI04.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs*",
-              "RelativeToolTip": "BAI04.cs*",
-              "ViewState": "AQIAAOkAAAAAAAAAAADwv/8AAAAAAAAA",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs",
+              "RelativeToolTip": "BAI04.cs",
+              "ViewState": "AQIAAPgAAAAAAAAAAAAnwBoBAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-05T01:47:32.995Z",
               "EditorCaption": ""
@@ -93,23 +93,22 @@
               "Title": "BAI04.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs",
               "RelativeDocumentMoniker": "BAI04.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs [Design]*",
-              "RelativeToolTip": "BAI04.cs [Design]*",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\BAI04.cs [Design]",
+              "RelativeToolTip": "BAI04.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-03-28T13:07:15.707Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "LAB2.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs",
               "RelativeDocumentMoniker": "LAB2.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BTTH2\\LAB2.cs [Design]",
               "RelativeToolTip": "LAB2.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-03-28T09:50:28.173Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-03-28T09:50:28.173Z"
             }
           ]
         }

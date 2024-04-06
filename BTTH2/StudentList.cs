@@ -39,6 +39,14 @@ namespace BTTH2
         {
             return List.Count();
         }
+
+        // method get enumerator
+        public IEnumerator<Student> GetEnumerator()
+        {
+            return List.GetEnumerator();
+        }
+
+
                   
 
     }

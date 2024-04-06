@@ -35,7 +35,7 @@
             this.TextBoxScore3 = new System.Windows.Forms.TextBox();
             this.TextBoxAvg = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.TextBoxOutput = new System.Windows.Forms.RichTextBox();
             this.LabelName = new System.Windows.Forms.Label();
             this.LabelPhoneNum = new System.Windows.Forms.Label();
             this.LabelScore1 = new System.Windows.Forms.Label();
@@ -54,7 +54,6 @@
             this.TextBoxNameRead = new System.Windows.Forms.TextBox();
             this.TextBoxPhoneNumRead = new System.Windows.Forms.TextBox();
             this.TextBoxScore1Read = new System.Windows.Forms.TextBox();
-            this.ButtonWrite = new System.Windows.Forms.Button();
             this.ButtonRead = new System.Windows.Forms.Button();
             this.ButtonAdd = new System.Windows.Forms.Button();
             this.ComboBoxStudent = new System.Windows.Forms.ComboBox();
@@ -131,13 +130,13 @@
             this.label1.TabIndex = 14;
             this.label1.Text = "Bai04";
             // 
-            // richTextBox1
+            // TextBoxOutput
             // 
-            this.richTextBox1.Location = new System.Drawing.Point(325, 105);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(267, 321);
-            this.richTextBox1.TabIndex = 15;
-            this.richTextBox1.Text = "";
+            this.TextBoxOutput.Location = new System.Drawing.Point(325, 105);
+            this.TextBoxOutput.Name = "TextBoxOutput";
+            this.TextBoxOutput.Size = new System.Drawing.Size(267, 321);
+            this.TextBoxOutput.TabIndex = 15;
+            this.TextBoxOutput.Text = "";
             // 
             // LabelName
             // 
@@ -311,17 +310,6 @@
             this.TextBoxScore1Read.Size = new System.Drawing.Size(100, 20);
             this.TextBoxScore1Read.TabIndex = 22;
             // 
-            // ButtonWrite
-            // 
-            this.ButtonWrite.Enabled = false;
-            this.ButtonWrite.Location = new System.Drawing.Point(98, 45);
-            this.ButtonWrite.Name = "ButtonWrite";
-            this.ButtonWrite.Size = new System.Drawing.Size(120, 51);
-            this.ButtonWrite.TabIndex = 34;
-            this.ButtonWrite.Text = "Write FIle";
-            this.ButtonWrite.UseVisualStyleBackColor = true;
-            this.ButtonWrite.Click += new System.EventHandler(this.ButtonWrite_Click);
-            // 
             // ButtonRead
             // 
             this.ButtonRead.Location = new System.Drawing.Point(751, 45);
@@ -450,7 +438,6 @@
             this.Controls.Add(this.ComboBoxStudent);
             this.Controls.Add(this.ButtonAdd);
             this.Controls.Add(this.ButtonRead);
-            this.Controls.Add(this.ButtonWrite);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label4);
@@ -469,7 +456,7 @@
             this.Controls.Add(this.LabelScore1);
             this.Controls.Add(this.LabelPhoneNum);
             this.Controls.Add(this.LabelName);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.TextBoxOutput);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TextBoxAvg);
             this.Controls.Add(this.TextBoxScore3);
@@ -493,7 +480,7 @@
         private System.Windows.Forms.TextBox TextBoxScore3;
         private System.Windows.Forms.TextBox TextBoxAvg;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox TextBoxOutput;
         private System.Windows.Forms.Label LabelName;
         private System.Windows.Forms.Label LabelPhoneNum;
         private System.Windows.Forms.Label LabelScore1;
@@ -512,7 +499,6 @@
         private System.Windows.Forms.TextBox TextBoxNameRead;
         private System.Windows.Forms.TextBox TextBoxPhoneNumRead;
         private System.Windows.Forms.TextBox TextBoxScore1Read;
-        private System.Windows.Forms.Button ButtonWrite;
         private System.Windows.Forms.Button ButtonRead;
         private System.Windows.Forms.Button ButtonAdd;
         private System.Windows.Forms.ComboBox ComboBoxStudent;

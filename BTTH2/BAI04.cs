@@ -39,7 +39,7 @@ namespace BTTH2
 
             try
             {
-                FileStream fs = new FileStream("StudentList.txt", FileMode.OpenOrCreate, FileAccess.Read);
+                FileStream fs = new FileStream("input4.txt", FileMode.OpenOrCreate, FileAccess.Read);
                 BinaryFormatter bf = new BinaryFormatter();
                 StudentList StudentList = (StudentList)bf.Deserialize(fs);
                 fs.Close();
@@ -89,7 +89,7 @@ namespace BTTH2
             //try to create a filestream to write the student to the file if it exist, otherwise create a new file
             try
             {
-                FileStream fs = new FileStream("StudentList.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
+                FileStream fs = new FileStream("input4.txt", FileMode.OpenOrCreate, FileAccess.ReadWrite);
                 StreamWriter sw = new StreamWriter(fs);
                 StudentList studentList = new StudentList();
                 // if the file exist, read the the file using binary formatter
@@ -98,16 +98,16 @@ namespace BTTH2
                 {
                     BinaryFormatter Bf = new BinaryFormatter();
                     studentList = (StudentList)Bf.Deserialize(fs);
-                    fs.Close();
-
                 }
+                    fs.Close();
+                
 
                 // create a new list and add the student to the list
                 studentList.AddStudent(InputStudent);   
                 //serialize the list and write it to the file
                 BinaryFormatter bf = new BinaryFormatter();
                 //create a new filestream to overwrite the list to the file
-                fs = new FileStream("StudentList.txt", FileMode.Create, FileAccess.Write);
+                fs = new FileStream("input4.txt", FileMode.OpenOrCreate, FileAccess.Write);
                         bf.Serialize(fs, studentList);
                         fs.Close();
 
@@ -250,7 +250,7 @@ namespace BTTH2
             //deserialize the student list from the file
             try
             {
-                FileStream fs = new FileStream("StudentList.txt", FileMode.OpenOrCreate, FileAccess.Read);
+                FileStream fs = new FileStream("input4.txt", FileMode.OpenOrCreate, FileAccess.Read);
                 BinaryFormatter bf = new BinaryFormatter();
                 StudentList StudentList = (StudentList)bf.Deserialize(fs);
                 fs.Close();
@@ -259,7 +259,7 @@ namespace BTTH2
                 StudentList.RemoveStudent(ComboBoxStudent.SelectedIndex);
 
                 //serialize the list and overwrite it to the file
-                fs = new FileStream("StudentList.txt", FileMode.Create, FileAccess.Write);
+                fs = new FileStream("input4.txt", FileMode.Create, FileAccess.Write);
                 bf.Serialize(fs, StudentList);
                 fs.Close();
 
@@ -318,7 +318,7 @@ namespace BTTH2
             // try to read the student list from the file
             try
             {
-                FileStream fs = new FileStream("StudentList.txt", FileMode.OpenOrCreate, FileAccess.Read);
+                FileStream fs = new FileStream("input4.txt", FileMode.OpenOrCreate, FileAccess.Read);
                 BinaryFormatter bf = new BinaryFormatter();
                 StudentList StudentList = (StudentList)bf.Deserialize(fs);
                 fs.Close();

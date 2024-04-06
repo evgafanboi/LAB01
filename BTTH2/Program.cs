@@ -17,7 +17,7 @@ namespace BTTH2
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new LAB2());
-            DBInit();
+            //DBInit();
         }
         static void DBInit()
         {

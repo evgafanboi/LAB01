@@ -374,47 +374,47 @@ namespace BTTH2
             ButtonCalculateAvg.Enabled = false;
         }
 
-        private void ButtonDelete_Click(object sender, EventArgs e)
-        {
-            //deserialize the student list from the file
-            try
-            {
-                FileStream fs = new FileStream("output.txt", FileMode.OpenOrCreate, FileAccess.Read);
-                BinaryFormatter bf = new BinaryFormatter();
-                StudentList StudentList = (StudentList)bf.Deserialize(fs);
-                fs.Close();
+        //private void ButtonDelete_Click(object sender, EventArgs e)
+        //{
+        //    //deserialize the student list from the file
+        //    try
+        //    {
+        //        FileStream fs = new FileStream("output.txt", FileMode.OpenOrCreate, FileAccess.Read);
+        //        BinaryFormatter bf = new BinaryFormatter();
+        //        StudentList StudentList = (StudentList)bf.Deserialize(fs);
+        //        fs.Close();
 
-                //remove the student from the list
-                StudentList.RemoveStudent(ComboBoxStudent.SelectedIndex);
+        //        //remove the student from the list
+        //        StudentList.RemoveStudent(ComboBoxStudent.SelectedIndex);
 
-                //serialize the list and overwrite it to the file
-                fs = new FileStream("input4.txt", FileMode.Create, FileAccess.Write);
-                bf.Serialize(fs, StudentList);
-                fs.Close();
+        //        //serialize the list and overwrite it to the file
+        //        fs = new FileStream("input4.txt", FileMode.Create, FileAccess.Write);
+        //        bf.Serialize(fs, StudentList);
+        //        fs.Close();
 
-                //clear the combobox and the textboxes
-                ComboBoxStudent.Items.Clear();
-                TextBoxNameRead.Text = "";
-                TextBoxIDRead.Text = "";
-                TextBoxPhoneNumRead.Text = "";
-                TextBoxScore1Read.Text = "";
-                TextBoxScore2Read.Text = "";
-                TextBoxScore3Read.Text = "";
-                TextBoxAvgRead.Text = "";
+        //        //clear the combobox and the textboxes
+        //        ComboBoxStudent.Items.Clear();
+        //        TextBoxNameRead.Text = "";
+        //        TextBoxIDRead.Text = "";
+        //        TextBoxPhoneNumRead.Text = "";
+        //        TextBoxScore1Read.Text = "";
+        //        TextBoxScore2Read.Text = "";
+        //        TextBoxScore3Read.Text = "";
+        //        TextBoxAvgRead.Text = "";
 
-                //reset combobox and disable the delete button
-                ComboBoxStudent.Enabled = false;
-                ComboBoxStudent.Text = "";
-                TextBoxOutput.Text = "";
+        //        //reset combobox and disable the delete button
+        //        ComboBoxStudent.Enabled = false;
+        //        ComboBoxStudent.Text = "";
+        //        TextBoxOutput.Text = "";
 
-                //then call button read to read the list and add the student to the combobox
-                ButtonRead_Click(sender, e);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Lỗi khi ghi file", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
+        //        //then call button read to read the list and add the student to the combobox
+        //        ButtonRead_Click(sender, e);
+        //    }
+        //    catch (Exception)
+        //    {
+        //        MessageBox.Show("Lỗi khi ghi file", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        //    }
+        //}
 
         private void TextBoxNameRead_TextChanged(object sender, EventArgs e)
         {

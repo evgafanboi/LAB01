@@ -11,9 +11,10 @@ namespace BTTH2
     internal class Student
     {
         private string Name;
-        private string ID;
+        private int ID;
         private string PhoneNum;
         private List<float> ScoreArr;
+        private float AvgScore;
         public Student(string Name = "")
         {
             this.Name = Name;
@@ -65,12 +66,12 @@ namespace BTTH2
             this.PhoneNum = _PhoneNum;
         }
 
-        public void SetID(string _ID)
+        public void SetID(int _ID)
         {
             this.ID = _ID;
         }
 
-        public string ReadID()
+        public int ReadID()
         {
             return ID;
         }
@@ -80,12 +81,14 @@ namespace BTTH2
             return PhoneNum;
         }
 
-        public float AvgScore()
+        public void SetAvgScore(float Score)
         {
-            float SumScore = 0;
-            foreach (float i in ScoreArr)
-                SumScore = SumScore + i;
-            return ((float)SumScore / ScoreArr.Count());
+            this.AvgScore = Score;
+        }
+
+        public float GetAvgScore()
+        {
+            return this.AvgScore;
         }
 
         //public int NumPassingScores()

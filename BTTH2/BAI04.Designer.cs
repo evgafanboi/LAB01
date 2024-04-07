@@ -59,12 +59,10 @@
             this.ComboBoxStudent = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
             this.ButtonCalculateAvg = new System.Windows.Forms.Button();
-            this.ButtonDelete = new System.Windows.Forms.Button();
             this.LabelMSSV = new System.Windows.Forms.Label();
             this.TextBoxID = new System.Windows.Forms.TextBox();
             this.LabelMSSVRead = new System.Windows.Forms.Label();
             this.TextBoxIDRead = new System.Windows.Forms.TextBox();
-            this.TextBoxStudentViewNum = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // TextBoxScore1
@@ -361,20 +359,9 @@
             this.ButtonCalculateAvg.Name = "ButtonCalculateAvg";
             this.ButtonCalculateAvg.Size = new System.Drawing.Size(120, 51);
             this.ButtonCalculateAvg.TabIndex = 40;
-            this.ButtonCalculateAvg.Text = "Calculate Avg";
+            this.ButtonCalculateAvg.Text = "Calculate Avg and Write";
             this.ButtonCalculateAvg.UseVisualStyleBackColor = true;
             this.ButtonCalculateAvg.Click += new System.EventHandler(this.ButtonCalculateAvg_Click);
-            // 
-            // ButtonDelete
-            // 
-            this.ButtonDelete.Enabled = false;
-            this.ButtonDelete.Location = new System.Drawing.Point(405, 475);
-            this.ButtonDelete.Name = "ButtonDelete";
-            this.ButtonDelete.Size = new System.Drawing.Size(120, 51);
-            this.ButtonDelete.TabIndex = 41;
-            this.ButtonDelete.Text = "Delete";
-            this.ButtonDelete.UseVisualStyleBackColor = true;
-            this.ButtonDelete.Click += new System.EventHandler(this.ButtonDelete_Click);
             // 
             // LabelMSSV
             // 
@@ -414,25 +401,15 @@
             this.TextBoxIDRead.TabIndex = 44;
             this.TextBoxIDRead.TextChanged += new System.EventHandler(this.TextBoxIDRead_TextChanged);
             // 
-            // TextBoxStudentViewNum
-            // 
-            this.TextBoxStudentViewNum.AutoSize = true;
-            this.TextBoxStudentViewNum.Location = new System.Drawing.Point(771, 519);
-            this.TextBoxStudentViewNum.Name = "TextBoxStudentViewNum";
-            this.TextBoxStudentViewNum.Size = new System.Drawing.Size(0, 13);
-            this.TextBoxStudentViewNum.TabIndex = 46;
-            // 
             // BAI04
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(953, 561);
-            this.Controls.Add(this.TextBoxStudentViewNum);
             this.Controls.Add(this.LabelMSSVRead);
             this.Controls.Add(this.TextBoxIDRead);
             this.Controls.Add(this.LabelMSSV);
             this.Controls.Add(this.TextBoxID);
-            this.Controls.Add(this.ButtonDelete);
             this.Controls.Add(this.ButtonCalculateAvg);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.ComboBoxStudent);
@@ -504,11 +481,9 @@
         private System.Windows.Forms.ComboBox ComboBoxStudent;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button ButtonCalculateAvg;
-        private System.Windows.Forms.Button ButtonDelete;
         private System.Windows.Forms.Label LabelMSSV;
         private System.Windows.Forms.TextBox TextBoxID;
         private System.Windows.Forms.Label LabelMSSVRead;
         private System.Windows.Forms.TextBox TextBoxIDRead;
-        private System.Windows.Forms.Label TextBoxStudentViewNum;
     }
 }

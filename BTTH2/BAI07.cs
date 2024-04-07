@@ -18,13 +18,17 @@ namespace BTTH2
         public BAI07()
         {
             InitializeComponent();
-            //set node to current user desktop
-            TreeNode root = new TreeNode(Environment.GetFolderPath(Environment.SpecialFolder.Desktop));
-            root.Name = root.Text;
-            TreeViewFileTree.Nodes.Add(root);
-            // add dummy node to the root node
-            root.Nodes.Add(new TreeNode());
-            TreeViewFileTree_LoadExplorer(root);
+            //add root node are the drives
+            DriveInfo[] allDrives = DriveInfo.GetDrives();
+            foreach (DriveInfo Drive in allDrives)
+            {
+                TreeNode root = new TreeNode(Drive.Name);
+                root.Name = Drive.Name;
+                TreeViewFileTree.Nodes.Add(root);
+                //add dummy node to the root node
+                root.Nodes.Add(new TreeNode());
+                TreeViewFileTree_LoadExplorer(root);
+            }
 
         }
 

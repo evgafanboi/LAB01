@@ -113,7 +113,9 @@ namespace BTTH2
             if (TreeViewFileTree.SelectedNode != null)
             {
                 // if a node is a image file, show it in the picture box
-                if (Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".jpg" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".png" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".bmp" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".tiff" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".gif")
+                if (Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".jpg" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".png" 
+                    || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".bmp" || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".tiff" 
+                    || Path.GetExtension(TreeViewFileTree.SelectedNode.Name) == ".gif")
                     PictureBoxImage.Image = Image.FromFile(TreeViewFileTree.SelectedNode.Name);
                 else
                     PictureBoxImage.Image = null;

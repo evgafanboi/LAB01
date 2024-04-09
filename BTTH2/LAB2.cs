@@ -57,5 +57,11 @@ namespace BTTH2
             BAI07 f7 = new BAI07();
             f7.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            BAI05 f5 = new BAI05();
+            f5 .Show();
+        }
     }
 }

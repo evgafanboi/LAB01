@@ -1,0 +1,5 @@
+Tên phim: Blade Runner 2049
+Số vé đã bán: 4
+Số lượng vé tồn: 11
+Tỉ lệ vé bán ra: 36%
+Doanh thu: 3250000

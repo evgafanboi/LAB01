@@ -1,0 +1,11 @@
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\bin\Debug\LAB03.exe.config
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\bin\Debug\LAB03.exe
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\bin\Debug\LAB03.pdb
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.csproj.AssemblyReference.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.Properties.Resources.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.csproj.GenerateResource.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.csproj.CoreCompileInputs.cache
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.exe
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.pdb
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.Form1.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI02.resources

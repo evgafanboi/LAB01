@@ -35,16 +35,17 @@ namespace LAB03
             ButtonReset.Enabled = true;
             serverThread.Start();
         }
-        private void StartUnsafeThread()
+        private async void  StartUnsafeThread()
         {
             listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             int bytes_received = 0;
             byte[] receive_bytes = new byte[1];
             IPEndPoint ip = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
             listenerSocket.Bind(ip);
-            listenerSocket.Listen(-1); // no limit on the number of connections
+            listenerSocket.Listen(-1); 
+            richTextBox1.Text = "Waiting for connection on port 8080...\n";
             client_socket = listenerSocket.Accept();
-            richTextBox1.Text = "Connected to " + client_socket.RemoteEndPoint.ToString() + "\n";
+            richTextBox1.Text += "Connected to " + client_socket.RemoteEndPoint.ToString() + "\n";
             Stopconnection = false;
             while (client_socket.Connected)
             {

@@ -7,15 +7,15 @@
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab03\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "BAI02.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs*",
               "RelativeToolTip": "BAI02.cs*",
-              "ViewState": "AQIAACsAAAAAAAAAAAAIwEgAAAAAAAAA",
+              "ViewState": "AQIAACkAAAAAAAAAAAAkwDsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T02:04:07.324Z",
               "EditorCaption": ""
@@ -59,11 +59,10 @@
               "Title": "BAI02.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs",
               "RelativeDocumentMoniker": "BAI02.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs [Design]*",
-              "RelativeToolTip": "BAI02.cs [Design]*",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs [Design]",
+              "RelativeToolTip": "BAI02.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T02:02:23.302Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-05T02:02:23.302Z"
             },
             {
               "$type": "Document",
@@ -75,8 +74,7 @@
               "RelativeToolTip": "Form1.cs",
               "ViewState": "AQIAAAIAAAAAAAAAAAAhwBYAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T02:01:58.013Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-05T02:01:58.013Z"
             },
             {
               "$type": "Document",
@@ -87,8 +85,7 @@
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\Form1.cs [Design]",
               "RelativeToolTip": "Form1.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T01:57:32.988Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-05T01:57:32.988Z"
             }
           ]
         }

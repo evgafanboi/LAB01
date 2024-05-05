@@ -18,7 +18,9 @@ namespace LAB03
 {
     public partial class BAI02 : Form
     {
-        Socket listenerSocket = new Socket(AddressFamily.InterNetwork,SocketType.Stream,ProtocolType.Tcp);
+        Socket listenerSocket;
+        Socket client_socket;
+        bool Stopconnection = false;
         public BAI02()
         {
             InitializeComponent();
@@ -35,45 +37,34 @@ namespace LAB03
         }
         private void StartUnsafeThread()
         {
+            listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
             int bytes_received = 0;
             byte[] receive_bytes = new byte[1];
             IPEndPoint ip = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
             listenerSocket.Bind(ip);
             listenerSocket.Listen(-1); // no limit on the number of connections
-            Socket client_socket = listenerSocket.Accept();
-
+            client_socket = listenerSocket.Accept();
             richTextBox1.Text = "Connected to " + client_socket.RemoteEndPoint.ToString() + "\n";
+            Stopconnection = false;
             while (client_socket.Connected)
             {
-                //clear RichTextBox
-                string receive_string = "";
-                do
-                {
+                    string receive_string = "";
                     bytes_received = client_socket.Receive(receive_bytes);
                     receive_string = Encoding.ASCII.GetString(receive_bytes, 0, bytes_received);
                     richTextBox1.Text = richTextBox1.Text + receive_string;
-
-
-
-                }
-                while (receive_string[receive_string.Length - 1] != '\n');
-
-                    richTextBox1.Text = richTextBox1.Text + receive_string;
-                //while (true) ;
-                
-                listenerSocket.Close();
-
+                if (Stopconnection)
+                    break;
             }
+                listenerSocket.Close();
+                client_socket.Close();
+                richTextBox1.Text = "";
         }
 
         private void ButtonReset_Click(object sender, EventArgs e)
         {
-            //clear RichTextBox
-            richTextBox1.Clear();
-            listenerSocket.Close();
-            //halt the thread
-
-
+            Stopconnection = true;
+            ButtonReset.Enabled = false;
+            ButtonListen.Enabled = true;
         }
     }
 }

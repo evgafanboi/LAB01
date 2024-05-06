@@ -10,3 +10,4 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.pdb
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.Form1.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI02.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI06.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI06Client.resources

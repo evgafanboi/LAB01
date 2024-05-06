@@ -97,6 +97,8 @@ namespace LAB03
             client_socket.Close();
             ButtonReset.Enabled = false;
             ButtonListen.Enabled = true;
+            //clear the text box
+            richTextBox1.Text = "";
         }
     }
 }

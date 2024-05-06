@@ -35,35 +35,65 @@ namespace LAB03
             ButtonReset.Enabled = true;
             serverThread.Start();
         }
-        private async void  StartUnsafeThread()
+        private void  StartUnsafeThread()
         {
-            listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-            int bytes_received = 0;
-            byte[] receive_bytes = new byte[1];
-            IPEndPoint ip = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
-            listenerSocket.Bind(ip);
-            listenerSocket.Listen(-1); 
+            try
+            {
+                listenerSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+                IPEndPoint ip = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 8080);
+                listenerSocket.Bind(ip);
+                listenerSocket.Listen(-1); 
+            }
+
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+                int bytes_received = 0;
+                byte[] receive_bytes = new byte[1];
             richTextBox1.Text = "Waiting for connection on port 8080...\n";
             client_socket = listenerSocket.Accept();
             richTextBox1.Text += "Connected to " + client_socket.RemoteEndPoint.ToString() + "\n";
             Stopconnection = false;
-            while (client_socket.Connected)
+
+            while (SocketConnected(client_socket))
             {
+                try
+                {
                     string receive_string = "";
                     bytes_received = client_socket.Receive(receive_bytes);
                     receive_string = Encoding.ASCII.GetString(receive_bytes, 0, bytes_received);
                     richTextBox1.Text = richTextBox1.Text + receive_string;
-                if (Stopconnection)
+                }
+
+                catch
+                {
+                        break;
+                }
+                    if (Stopconnection)
                     break;
             }
                 listenerSocket.Close();
-                client_socket.Close();
                 richTextBox1.Text = "";
+                richTextBox1.Text += "Connection closed\n";
+        }
+
+
+        bool SocketConnected(Socket s)
+        {
+            //poll the socket to check connection status, wait 1000ms
+            bool part1 = s.Poll(1000, SelectMode.SelectRead);
+            bool part2 = (s.Available == 0);
+            if (part1 && part2)
+                return false;
+            else
+                return true;
         }
 
         private void ButtonReset_Click(object sender, EventArgs e)
         {
             Stopconnection = true;
+            client_socket.Close();
             ButtonReset.Enabled = false;
             ButtonListen.Enabled = true;
         }

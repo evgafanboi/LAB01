@@ -10,22 +10,22 @@ using System.Windows.Forms;
 
 namespace LAB03
 {
-    public partial class Form1 : Form
+    public partial class BAI06 : Form
     {
-        public Form1()
+        public BAI06()
         {
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ButtonClient_Click(object sender, EventArgs e)
         {
-            BAI02 f = new BAI02();
+            BAI06Client f = new BAI06Client();
             f.Show();
         }
 
-        private void button7_Click(object sender, EventArgs e)
+        private void ButtonServer_Click(object sender, EventArgs e)
         {
-            BAI06 f = new BAI06();
+            BAI06Server f = new BAI06Server();
             f.Show();
         }
     }

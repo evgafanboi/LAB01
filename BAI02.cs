@@ -83,6 +83,7 @@ namespace LAB03
         {
             //poll the socket to check connection status, wait 1000ms
             bool part1 = s.Poll(1000, SelectMode.SelectRead);
+            // if there is no data and the socket is not receiving data
             bool part2 = (s.Available == 0);
             if (part1 && part2)
                 return false;

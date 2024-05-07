@@ -99,8 +99,44 @@ namespace LAB03
                         }
 
                     });
+
                     Listen_Thread.IsBackground = true;
                     Listen_Thread.Start();
+
+                //create a thread to update combobox client list to all clients
+                Thread UpdateClientList_Thread = new Thread(() =>
+                {
+                        while (true)
+                        {
+                                //copy client name to list
+                                List<string> client_names = new List<string>();
+                                foreach (KeyValuePair<string, Socket> client in client_table)
+                                {
+                                    client_names.Add(client.Key);
+                                }
+
+                                foreach (KeyValuePair<string, Socket> client in client_table)
+                                { 
+                                    try
+                                    {
+                                        byte[] sendbytes = Serialize(client_names);
+                                        client.Value.Send(sendbytes);
+                                    }
+
+                                    catch
+                                    {
+                                            continue;
+                                    }
+                                
+                                }
+                            
+
+                            //update less frequently than receive
+                            Thread.Sleep(1000);
+                        }
+                });
+                    UpdateClientList_Thread.IsBackground = true;
+                    UpdateClientList_Thread.Start();
         }
 
 
@@ -116,6 +152,9 @@ namespace LAB03
             {
                 foreach (KeyValuePair<string, Socket> client in client_table)
                 {
+                    //skip sender
+                    if(client.Key == _message._sender)
+                        continue;
                     byte[] sendbytes = Serialize(_message);
                     client.Value.Send(sendbytes);
                 }

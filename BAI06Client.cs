@@ -25,7 +25,7 @@ namespace LAB03
 
         IPEndPoint ipep;
         Socket client;
-
+        List<string> sender_list;
         private void ButtonConnect_Click(object sender, EventArgs e)
         {
             ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9090);
@@ -54,6 +54,40 @@ namespace LAB03
             Thread Listenning_Thread = new Thread(Receive);
             Listenning_Thread.IsBackground = true;
             Listenning_Thread.Start();
+
+            //create a thread to receive sender list from server
+            //Thread SenderList_Receive_Thread = new Thread(() =>
+            //{
+            //    while (true)
+            //    {
+            //        byte[] data = new byte[1024 * 5000];
+            //        client.Receive(data);
+            //        List<string> sender_list = new List<string>();
+            //        try
+            //        {
+            //            // received data may be a message or a list of sender
+            //            sender_list = (List<string>)Desserialize(data);
+            //        }
+
+            //        catch
+            //        {
+            //            continue;
+            //        }
+
+            //        ComboBoxReceiver.Items.Clear();
+            //        foreach (string sender_names in sender_list)
+            //        {
+            //            ComboBoxReceiver.Items.Add(sender);
+            //        }
+
+            //        Thread.Sleep(1000);
+
+            //    }
+            //});
+
+            //SenderList_Receive_Thread.IsBackground = true;
+            //SenderList_Receive_Thread.Start();
+
 
             //enable button send and combobox
             ButtonSend.Enabled = true;
@@ -107,12 +141,22 @@ namespace LAB03
                     // set buffer size
                     byte[] data = new byte[1024 * 5000];
                     client.Receive(data);
-                    Message_ message_recv = (Message_)Desserialize(data);
-                    // after that add to listbox //////////////////////////////////////////////////////////////////////////////////
-                    ListViewItem item = new ListViewItem();
-                    item.Text = "[ " + message_recv._sender + " ]";
-                    item.SubItems.Add(message_recv._content);
-                    ListViewOutput.Items.Add(item);
+                    object obj = Desserialize(data);
+                    if (obj is Message_)
+                    {
+                        Message_ message_recv = (Message_)obj;
+                        // after that add to listbox //////////////////////////////////////////////////////////////////////////////////
+                        ListViewItem item = new ListViewItem();
+                        item.Text = "[ " + message_recv._sender + " ]";
+                        item.SubItems.Add(message_recv._content);
+                        ListViewOutput.Items.Add(item);
+                    }
+                    else if (obj is List<string>)
+                    {
+                        List<string>sender_list_temp = (List<string>)obj;
+                        sender_list = sender_list_temp;
+                        
+                    }
                 }
             }
             catch
@@ -148,6 +192,20 @@ namespace LAB03
             TextBoxName.Enabled = true;
             //clear listbox
             ListViewOutput.Items.Clear();
+        }
+
+        private void ComboBoxReceiver_Click(object sender, EventArgs e)
+        {
+            ComboBoxReceiver.Items.Clear();
+            if (sender_list == null)
+                return;
+            foreach (string sender_ in sender_list)
+            {
+                ComboBoxReceiver.Items.Add(sender_);
+            }
+            ComboBoxReceiver.Items.Add("*");
+            //remove client's own name from combobox
+            ComboBoxReceiver.Items.Remove(TextBoxName.Text);
         }
     }
 }

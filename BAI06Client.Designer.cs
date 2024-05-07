@@ -73,6 +73,7 @@
             this.ComboBoxReceiver.Name = "ComboBoxReceiver";
             this.ComboBoxReceiver.Size = new System.Drawing.Size(118, 21);
             this.ComboBoxReceiver.TabIndex = 3;
+            this.ComboBoxReceiver.Click += new System.EventHandler(this.ComboBoxReceiver_Click);
             // 
             // ButtonConnect
             // 

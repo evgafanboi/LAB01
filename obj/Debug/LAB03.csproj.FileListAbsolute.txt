@@ -27,3 +27,7 @@ D:\uni\NT106\LAB01\obj\Debug\LAB03.exe
 D:\uni\NT106\LAB01\obj\Debug\LAB03.pdb
 D:\uni\NT106\LAB01\obj\Debug\LAB03.BAI01_SERVER.resources
 D:\uni\NT106\LAB01\obj\Debug\LAB03.BAI01_CLIENT.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI01.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI01_CLIENT.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI01_SERVER.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB03\obj\Debug\LAB03.BAI06Server.resources

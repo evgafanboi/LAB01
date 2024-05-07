@@ -19,6 +19,7 @@ namespace LAB03
     {
         public BAI06Client()
         {
+            CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
         }
 
@@ -45,22 +46,34 @@ namespace LAB03
 
             //enable button send and combobox
             ButtonSend.Enabled = true;
+            ButtonSendFile.Enabled = true;
             ButtonConnect.Enabled = false;
             ComboBoxReceiver.Enabled = true;
-
+            TextBoxMessage.Enabled = true;
+            TextBoxName.Enabled = true;
         }
 
         private void ButtonSend_Click(object sender, EventArgs e)
         {
+
             //ignore empty message
-            if(TextBoxMessage.Text == "")
+            if (TextBoxMessage.Text == "")
                 return;
 
             Message_ message_send = new Message_();
-            message_send._sender = "Client";
+            message_send._sender = TextBoxName.Text;
             message_send._receiver = ComboBoxReceiver.Text;
+            message_send._content = TextBoxMessage.Text;
 
-            client.Send(Serialize(TextBoxMessage.Text));
+            client.Send(Serialize(message_send));
+
+            //clear message box
+            TextBoxMessage.Text = "";
+            // add to listbox
+            ListViewItem item = new ListViewItem();
+            item.Text = "[ " + message_send._sender + " ]";
+            item.SubItems.Add(message_send._content);
+            ListViewOutput.Items.Add(item);
         }
 
         byte[] Serialize(object obj)
@@ -81,9 +94,12 @@ namespace LAB03
                     byte[] data = new byte[1024 * 5000];
                     client.Receive(data);
                     Message_ message_recv = (Message_)Desserialize(data);
-                // after that add to listbox //////////////////////////////////////////////////////////////////////////////////
-                ListViewOutput.Items.Add(new ListViewItem(new string[] { "[", message_recv._sender,"]: " , message_recv._content }));
-
+                    // after that add to listbox //////////////////////////////////////////////////////////////////////////////////
+                    //ListViewItem item = new ListViewItem();
+                    //item.Text = "[ " + message_recv._sender + " ]";
+                    //item.SubItems.Add(message_recv._content);
+                    //ListViewOutput.Items.Add(item);
+                    //dont need to anymore because server will send back to client
                 }
             }
             catch
@@ -99,6 +115,11 @@ namespace LAB03
             MemoryStream stream = new MemoryStream(data);
             BinaryFormatter formatter = new BinaryFormatter();
             return formatter.Deserialize(stream);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

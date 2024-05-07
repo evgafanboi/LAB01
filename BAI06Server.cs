@@ -12,6 +12,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
+using System.Collections;
 
 namespace LAB03
 {
@@ -25,7 +26,12 @@ namespace LAB03
 
         IPEndPoint ipep;
         Socket server;
-        List<Socket> client_list = new List<Socket>();
+        //List<Socket> client_list = new List<Socket>();
+        //hash table to store client name and socket
+        Dictionary<string,Socket> client_table = new Dictionary<string,Socket>();
+        //hash table to client socket to client name
+
+        //List<string> client_names = new List<string>();
 
         private void ButtonListen_Click(object sender, EventArgs e)
         {
@@ -52,7 +58,27 @@ namespace LAB03
                                 server.Listen(100);
                                 Socket client = server.Accept();
                                 //add client to list
-                                client_list.Add(client);
+                                //client_list.Add(client);
+
+                                //hash table to store client id and client socket
+                                //Hashtable client_table = new Hashtable();
+                                //client_table.Add(client.RemoteEndPoint.ToString(), client);
+                                string clientName = "";
+                                //receive client name
+                                try
+                                {
+                                    byte[] nameBytes = new byte[1024];
+                                    int nameBytesReceived = client.Receive(nameBytes);
+                                    clientName = Encoding.UTF8.GetString(nameBytes, 0, nameBytesReceived);
+                                }
+
+                                catch
+                                {
+
+                                }
+
+                                //add name and client to dictionary
+                                client_table.Add(clientName, client);
                                 try
                                 {
                                     Thread Receive_Thread = new Thread(Receive);
@@ -88,23 +114,23 @@ namespace LAB03
             // broadcast message if receiver is *
             if(_message._receiver == "*")
             {
-                foreach(Socket client in client_list)
+                foreach (KeyValuePair<string, Socket> client in client_table)
                 {
-                    //Send(_message, client);
                     byte[] sendbytes = Serialize(_message);
-                    client.Send(sendbytes);
+                    client.Value.Send(sendbytes);
                 }
             }
             // find receiver in client list
             else
             {
-                foreach(Socket client in client_list)
+                foreach(KeyValuePair<string, Socket> client in client_table)
                 {
-                    //if(client.RemoteEndPoint.ToString() == _message._receiver)
-                    //{
-                    //    //Send(_message, client);
-                    //    return;
-                    //}
+                    if (client.Key == _message._receiver)
+                    {
+                        byte[] sendbytes = Serialize(_message);
+                        client.Value.Send(sendbytes);
+                        return;
+                    }
                 }
             }
             
@@ -138,8 +164,16 @@ namespace LAB03
 
             catch
             {
-                //remove cliet from list
-                client_list.Remove(client);
+                //remove cliet from list by foreach
+                foreach(KeyValuePair<string, Socket> client_ in client_table)
+                {
+                    if(client_.Value == client)
+                    {
+                        client_table.Remove(client_.Key);
+                        break;
+                    }
+                }
+
                 return;
             }
             //handle case when receive a file

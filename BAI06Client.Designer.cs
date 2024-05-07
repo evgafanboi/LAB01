@@ -33,13 +33,14 @@
             this.ComboBoxReceiver = new System.Windows.Forms.ComboBox();
             this.ButtonConnect = new System.Windows.Forms.Button();
             this.ListViewOutput = new System.Windows.Forms.ListView();
+            this.Sender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.Message = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label1 = new System.Windows.Forms.Label();
             this.TextBoxName = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.TextBoxFilePath = new System.Windows.Forms.TextBox();
             this.ButtonSendFile = new System.Windows.Forms.Button();
-            this.Sender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.Message = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ButtonReset = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TextBoxMessage
@@ -96,6 +97,16 @@
             this.ListViewOutput.UseCompatibleStateImageBehavior = false;
             this.ListViewOutput.View = System.Windows.Forms.View.Details;
             // 
+            // Sender
+            // 
+            this.Sender.Text = "Sender";
+            this.Sender.Width = 87;
+            // 
+            // Message
+            // 
+            this.Message.Text = "Message";
+            this.Message.Width = 478;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -107,7 +118,6 @@
             // 
             // TextBoxName
             // 
-            this.TextBoxName.Enabled = false;
             this.TextBoxName.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxName.Location = new System.Drawing.Point(13, 329);
             this.TextBoxName.Name = "TextBoxName";
@@ -144,21 +154,23 @@
             this.ButtonSendFile.UseVisualStyleBackColor = true;
             this.ButtonSendFile.Click += new System.EventHandler(this.button1_Click);
             // 
-            // Sender
+            // ButtonReset
             // 
-            this.Sender.Text = "Sender";
-            this.Sender.Width = 87;
-            // 
-            // Message
-            // 
-            this.Message.Text = "Message";
-            this.Message.Width = 478;
+            this.ButtonReset.Enabled = false;
+            this.ButtonReset.Location = new System.Drawing.Point(13, 11);
+            this.ButtonReset.Name = "ButtonReset";
+            this.ButtonReset.Size = new System.Drawing.Size(97, 23);
+            this.ButtonReset.TabIndex = 12;
+            this.ButtonReset.Text = "Reset";
+            this.ButtonReset.UseVisualStyleBackColor = true;
+            this.ButtonReset.Click += new System.EventHandler(this.ButtonReset_Click);
             // 
             // BAI06Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(570, 435);
+            this.Controls.Add(this.ButtonReset);
             this.Controls.Add(this.ButtonSendFile);
             this.Controls.Add(this.TextBoxFilePath);
             this.Controls.Add(this.label2);
@@ -189,5 +201,6 @@
         private System.Windows.Forms.Button ButtonSendFile;
         private System.Windows.Forms.ColumnHeader Sender;
         private System.Windows.Forms.ColumnHeader Message;
+        private System.Windows.Forms.Button ButtonReset;
     }
 }

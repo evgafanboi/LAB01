@@ -40,6 +40,17 @@ namespace LAB03
                 return;
             }
 
+            if (TextBoxName.Text == "")
+            {
+                MessageBox.Show("Please enter your name");
+                return;
+            }
+
+            //send name to server right after connecting
+            string clientName = TextBoxName.Text;
+            byte[] nameBytes = Encoding.UTF8.GetBytes(clientName);
+            client.Send(nameBytes);
+
             Thread Listenning_Thread = new Thread(Receive);
             Listenning_Thread.IsBackground = true;
             Listenning_Thread.Start();
@@ -48,7 +59,9 @@ namespace LAB03
             ButtonSend.Enabled = true;
             ButtonSendFile.Enabled = true;
             ButtonConnect.Enabled = false;
+            ButtonReset.Enabled = true;
             ComboBoxReceiver.Enabled = true;
+            TextBoxName.Enabled = false;
             TextBoxMessage.Enabled = true;
             TextBoxName.Enabled = true;
         }
@@ -63,6 +76,7 @@ namespace LAB03
             Message_ message_send = new Message_();
             message_send._sender = TextBoxName.Text;
             message_send._receiver = ComboBoxReceiver.Text;
+            //receiver is IPendPoint
             message_send._content = TextBoxMessage.Text;
 
             client.Send(Serialize(message_send));
@@ -95,11 +109,10 @@ namespace LAB03
                     client.Receive(data);
                     Message_ message_recv = (Message_)Desserialize(data);
                     // after that add to listbox //////////////////////////////////////////////////////////////////////////////////
-                    //ListViewItem item = new ListViewItem();
-                    //item.Text = "[ " + message_recv._sender + " ]";
-                    //item.SubItems.Add(message_recv._content);
-                    //ListViewOutput.Items.Add(item);
-                    //dont need to anymore because server will send back to client
+                    ListViewItem item = new ListViewItem();
+                    item.Text = "[ " + message_recv._sender + " ]";
+                    item.SubItems.Add(message_recv._content);
+                    ListViewOutput.Items.Add(item);
                 }
             }
             catch
@@ -120,6 +133,21 @@ namespace LAB03
         private void button1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void ButtonReset_Click(object sender, EventArgs e)
+        {
+            // close connection
+            client.Close();
+            //disable button send and combobox
+            ButtonSend.Enabled = false;
+            ButtonSendFile.Enabled = false;
+            ButtonConnect.Enabled = true;
+            ComboBoxReceiver.Enabled = false;
+            TextBoxMessage.Enabled = false;
+            TextBoxName.Enabled = true;
+            //clear listbox
+            ListViewOutput.Items.Clear();
         }
     }
 }

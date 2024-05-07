@@ -25,6 +25,10 @@ namespace LAB03
             get; set;
         }
         
+        //public string _name
+        //{
+        //    get; set;
+        //}
     }
     
 }

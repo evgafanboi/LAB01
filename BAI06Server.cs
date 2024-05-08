@@ -13,6 +13,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Threading;
 using System.Collections;
+using System.Runtime.Remoting.Messaging;
 
 namespace LAB03
 {
@@ -65,17 +66,21 @@ namespace LAB03
                                 //client_table.Add(client.RemoteEndPoint.ToString(), client);
                                 string clientName = "";
                                 //receive client name
-                                try
+
+                                while (clientName == "")
                                 {
-                                    byte[] nameBytes = new byte[1024];
-                                    int nameBytesReceived = client.Receive(nameBytes);
-                                    clientName = Encoding.UTF8.GetString(nameBytes, 0, nameBytesReceived);
+                                    try
+                                    {
+                                        byte[] nameBytes = new byte[1024];
+                                        int nameBytesReceived = client.Receive(nameBytes);
+                                        clientName = Encoding.UTF8.GetString(nameBytes, 0, nameBytesReceived);
+                                    }
+                                    catch
+                                    {
+                                        Console.WriteLine("Client name is not available");
+                                    }
                                 }
 
-                                catch
-                                {
-
-                                }
 
                                 //add name and client to dictionary
                                 client_table.Add(clientName, client);
@@ -137,38 +142,89 @@ namespace LAB03
                 });
                     UpdateClientList_Thread.IsBackground = true;
                     UpdateClientList_Thread.Start();
+
+            ////create a thread to poll client connection status
+            //Thread PollClient_Thread = new Thread(() =>
+            //{
+            //    while (true)
+            //    {
+            //        foreach (KeyValuePair<string, Socket> client in client_table)
+            //        {
+            //            if (!SocketConnected(client.Value))
+            //            {
+            //                client_table.Remove(client.Key);
+            //            }
+            //        }
+            //        Thread.Sleep(500);
+            //    }
+            //});
+            //PollClient_Thread.IsBackground = true;
+            //PollClient_Thread.Start();
         }
 
 
         
 
-        private void Send(Message_ _message)
+        private void Send(object obj)
         {
-            if(_message._content == "")
-                return;
+            if(obj is Message_)
+            {
+                Message_ _message = (Message_)obj;
+                if(_message._content == "")
+                    return;
 
-            // broadcast message if receiver is *
-            if(_message._receiver == "*")
-            {
-                foreach (KeyValuePair<string, Socket> client in client_table)
+                // broadcast message if receiver is *
+                if(_message._receiver == "*")
                 {
-                    //skip sender
-                    if(client.Key == _message._sender)
-                        continue;
-                    byte[] sendbytes = Serialize(_message);
-                    client.Value.Send(sendbytes);
-                }
-            }
-            // find receiver in client list
-            else
-            {
-                foreach(KeyValuePair<string, Socket> client in client_table)
-                {
-                    if (client.Key == _message._receiver)
+                    foreach (KeyValuePair<string, Socket> client in client_table)
                     {
+                        //skip sender
+                        if(client.Key == _message._sender)
+                            continue;
                         byte[] sendbytes = Serialize(_message);
                         client.Value.Send(sendbytes);
-                        return;
+                    }
+                }
+                // find receiver in client list
+                else
+                {
+                    foreach(KeyValuePair<string, Socket> client in client_table)
+                    {
+                        if (client.Key == _message._receiver)
+                        {
+                            byte[] sendbytes = Serialize(_message);
+                            client.Value.Send(sendbytes);
+                            return;
+                        }
+                    }
+                }
+            }
+            else
+            {
+                FileMessage fileMessage = (FileMessage)obj;
+                if(fileMessage.receiver == "")
+                    return;
+                if(fileMessage.receiver == "*")
+                {
+                    foreach (KeyValuePair<string, Socket> client in client_table)
+                    {
+                        //skip sender
+                        if(client.Key == fileMessage.sender)
+                            continue;
+                        byte[] sendbytes = Serialize(fileMessage);
+                        client.Value.Send(sendbytes);
+                    }
+                }
+                else
+                {
+                    foreach(KeyValuePair<string, Socket> client in client_table)
+                    {
+                        if (client.Key == fileMessage.receiver)
+                        {
+                            byte[] sendbytes = Serialize(fileMessage);
+                            client.Value.Send(sendbytes);
+                            return;
+                        }
                     }
                 }
             }
@@ -194,16 +250,56 @@ namespace LAB03
                     //
                     ///
                     //
+                    object recv_obj = (object)Desserialize(receivebytes);
+                    if(recv_obj is Message_)
+                    {
+                        Message_ _message = (Message_)recv_obj;
 
-                    Message_ _message = (Message_)Desserialize(receivebytes);
+                        //add message to listbox
+                        ListViewItem item = new ListViewItem();
+                        item.Text = "[ " + _message._sender + " -> " + _message._receiver + "]";
+                        item.SubItems.Add(_message._content);
+                        ListViewOutput.Items.Add(item);
 
-                    //add message to listbox
-                    ListViewItem item = new ListViewItem();
-                    item.Text = "[ " + _message._sender + " -> " + _message._receiver + "]";
-                    item.SubItems.Add(_message._content);
-                    ListViewOutput.Items.Add(item);
+                        Send(_message);
+                    }
+                    else
+                    {
+                           //handle case when receive a file
+                           FileMessage fileMessage = (FileMessage)recv_obj;
+                           //save file to current folder/Server/[file]
+                           //get current path
+                           string currentPath = Directory.GetCurrentDirectory();
+                           currentPath = currentPath + "\\Server";
+                           //create folder if not exist
+                           if (!Directory.Exists(currentPath))
+                           {
+                                Directory.CreateDirectory(currentPath);
+                           }
+                           currentPath = currentPath + "\\" + fileMessage.file_name;
+                            // if file exist, add random number to file name
+                            while (File.Exists(currentPath))
+                            {
+                                Random rand = new Random();
+                                currentPath = currentPath + rand.Next(1000);
+                            }
 
-                    Send(_message);
+                           //write file
+                           File.WriteAllBytes(currentPath, fileMessage.file_bytes);
+
+                            //send file to receiver
+                            Send(fileMessage);
+
+                            //add to listbox
+                            ListViewItem item = new ListViewItem();
+                            item.Text = "[ " + fileMessage.sender + " -> " + fileMessage.receiver + "]";
+
+
+                            //get file name from savePath
+                            item.SubItems.Add("File: " + Path.GetFileName(currentPath) + " has been received");
+                            ListViewOutput.Items.Add(item);
+                    }
+
                 }
             }
 
@@ -238,6 +334,18 @@ namespace LAB03
             BinaryFormatter formatter = new BinaryFormatter();
             formatter.Serialize(stream, obj);
             return stream.ToArray();
+        }
+
+        bool SocketConnected(Socket s)
+        {
+            //poll the socket to check connection status, wait 1000ms
+            bool part1 = s.Poll(1000, SelectMode.SelectRead);
+            // if there is no data and the socket is not receiving data
+            bool part2 = (s.Available == 0);
+            if (part1 && part2)
+                return false;
+            else
+                return true;
         }
     }
 }

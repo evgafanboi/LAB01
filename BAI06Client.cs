@@ -21,6 +21,9 @@ namespace LAB03
         {
             CheckForIllegalCrossThreadCalls = false;
             InitializeComponent();
+            //set default value for combobox
+            ComboBoxReceiver.Text = "*";
+
         }
 
         IPEndPoint ipep;
@@ -30,6 +33,13 @@ namespace LAB03
         {
             ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9090);
             client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
+            if (TextBoxName.Text == "")
+            {
+                MessageBox.Show("Please enter your name");
+                return;
+            }
+
             try
             {
                 client.Connect(ipep);
@@ -39,13 +49,6 @@ namespace LAB03
                 MessageBox.Show("Server is not available");
                 return;
             }
-
-            if (TextBoxName.Text == "")
-            {
-                MessageBox.Show("Please enter your name");
-                return;
-            }
-
             //send name to server right after connecting
             string clientName = TextBoxName.Text;
             byte[] nameBytes = Encoding.UTF8.GetBytes(clientName);
@@ -55,38 +58,6 @@ namespace LAB03
             Listenning_Thread.IsBackground = true;
             Listenning_Thread.Start();
 
-            //create a thread to receive sender list from server
-            //Thread SenderList_Receive_Thread = new Thread(() =>
-            //{
-            //    while (true)
-            //    {
-            //        byte[] data = new byte[1024 * 5000];
-            //        client.Receive(data);
-            //        List<string> sender_list = new List<string>();
-            //        try
-            //        {
-            //            // received data may be a message or a list of sender
-            //            sender_list = (List<string>)Desserialize(data);
-            //        }
-
-            //        catch
-            //        {
-            //            continue;
-            //        }
-
-            //        ComboBoxReceiver.Items.Clear();
-            //        foreach (string sender_names in sender_list)
-            //        {
-            //            ComboBoxReceiver.Items.Add(sender);
-            //        }
-
-            //        Thread.Sleep(1000);
-
-            //    }
-            //});
-
-            //SenderList_Receive_Thread.IsBackground = true;
-            //SenderList_Receive_Thread.Start();
 
 
             //enable button send and combobox
@@ -105,6 +76,12 @@ namespace LAB03
             //ignore empty message
             if (TextBoxMessage.Text == "")
                 return;
+            if(!SocketConnected(client))
+            {
+                MessageBox.Show("Server has been disconnected");
+                ButtonReset_Click(null, null);
+                return;
+            }
 
             Message_ message_send = new Message_();
             message_send._sender = TextBoxName.Text;
@@ -137,6 +114,16 @@ namespace LAB03
             {
                 while(true)
                 {
+                    //check if socket is connected
+                    
+                    if (!SocketConnected(client))
+                    {
+                        MessageBox.Show("Server has been disconnected");
+                        //call reset button
+                        ButtonReset_Click(null, null);
+                        return;
+                    }
+
                     // set buffer size
                     byte[] data = new byte[1024 * 5000];
                     client.Receive(data);
@@ -154,6 +141,38 @@ namespace LAB03
                     {
                         List<string>sender_list_temp = (List<string>)obj;
                         sender_list = sender_list_temp;
+                        
+                    }
+                    else if (obj is FileMessage)
+                    {
+                        FileMessage fileMessage = (FileMessage)obj;
+                        //get current directory
+                        string currentDirectory = Directory.GetCurrentDirectory();
+                        //save file to [currentpath]\[clientName]\[fileName]
+                        //create directory if not exist
+                        if (!Directory.Exists(currentDirectory + "\\" + TextBoxName.Text))
+                        {
+                            Directory.CreateDirectory(currentDirectory + "\\" + TextBoxName.Text);
+                        }
+                        string savePath = currentDirectory + "\\" + TextBoxName.Text + "\\" + fileMessage.file_name;
+                        
+                        //check if file already exists
+                        while (File.Exists(savePath))
+                        {
+                            Random rand = new Random();
+                            savePath = savePath + rand.Next(1000);
+                        }
+
+                        //write file
+                        File.WriteAllBytes(savePath, fileMessage.file_bytes);
+
+                        //add to listbox
+                        ListViewItem item = new ListViewItem();
+                        item.Text = "[ " + fileMessage.sender + " ]";
+                        
+                        //get file name from savePath
+                        item.SubItems.Add("File: " + Path.GetFileName(savePath) + " has been received");
+                        ListViewOutput.Items.Add(item);
                         
                     }
                 }
@@ -183,11 +202,11 @@ namespace LAB03
             if (fileDialog.ShowDialog() == DialogResult.OK)
             {
                 // check if file is larger than 5KB
-                if (new FileInfo(fileDialog.FileName).Length > 1024 * 5000)
-                    {
+            if (new FileInfo(fileDialog.FileName).Length > 1024 * 5000)
+            {
                         MessageBox.Show("File is larger than 5KB");
                         return;
-                    }
+            }
 
                 if(fileDialog.CheckFileExists)
                 {
@@ -203,6 +222,13 @@ namespace LAB03
                         MessageBox.Show("Unable to access file");
                     }
 
+                if(!SocketConnected(client))
+                    {
+                           MessageBox.Show("Server has been disconnected");
+                            ButtonReset_Click(null, null);
+                            return;
+                    }
+
                     //read file content into byte array
                     byte[] fileContent = new byte[fileStream.Length];
                     fileStream.Read(fileContent, 0, fileContent.Length);
@@ -210,44 +236,19 @@ namespace LAB03
                     FileMessage fileMessage = new FileMessage();
                     fileMessage.file_bytes = fileContent;
                     fileMessage.receiver = ComboBoxReceiver.Text;
+                    fileMessage.sender = TextBoxName.Text;
+                    fileMessage.file_name = fileDialog.SafeFileName;
 
                     //send file to server
                     client.Send(Serialize(fileMessage));
                     
-                    ////send file name
-                    //string fileName = fileDialog.FileName;
-                    //byte[] fileNameBytes = Encoding.UTF8.GetBytes(fileName);
-                    //client.Send(fileNameBytes);
-
-                    ////send file content
-                    //byte[] fileContent = File.ReadAllBytes(fileName);
-                    //client.Send(fileContent);
-
-                    ////clear message box
-                    //TextBoxMessage.Text = "";
-                    //// add to listbox
-                    //ListViewItem item = new ListViewItem();
-                    //item.Text = "[ " + TextBoxName.Text + " ]";
-                    //item.SubItems.Add("File: " + fileName);
-                    //ListViewOutput.Items.Add(item);
+                    //add to listbox
+                    ListViewItem item = new ListViewItem();
+                    item.Text = "[ " + fileMessage.sender + " ]";
+                    item.SubItems.Add("File: " + fileDialog.SafeFileName);
+                    ListViewOutput.Items.Add(item);
                 }
 
-                ////send file name
-                //string fileName = fileDialog.FileName;
-                //byte[] fileNameBytes = Encoding.UTF8.GetBytes(fileName);
-                //client.Send(fileNameBytes);
-
-                    ////send file content
-                    //byte[] fileContent = File.ReadAllBytes(fileName);
-                    //client.Send(fileContent);
-
-                    ////clear message box
-                    //TextBoxMessage.Text = "";
-                    //// add to listbox
-                    //ListViewItem item = new ListViewItem();
-                    //item.Text = "[ " + TextBoxName.Text + " ]";
-                    //item.SubItems.Add("File: " + fileName);
-                    //ListViewOutput.Items.Add(item);
             }
         }
 
@@ -269,15 +270,33 @@ namespace LAB03
         private void ComboBoxReceiver_Click(object sender, EventArgs e)
         {
             ComboBoxReceiver.Items.Clear();
+            ComboBoxReceiver.Items.Add("*");
             if (sender_list == null)
                 return;
             foreach (string sender_ in sender_list)
             {
                 ComboBoxReceiver.Items.Add(sender_);
             }
-            ComboBoxReceiver.Items.Add("*");
             //remove client's own name from combobox
             ComboBoxReceiver.Items.Remove(TextBoxName.Text);
+        }
+
+        bool SocketConnected(Socket s)
+        {
+            //poll the socket to check connection status, wait 1000ms
+            bool part1 = s.Poll(1000, SelectMode.SelectRead);
+            // if there is no data and the socket is not receiving data
+            bool part2 = (s.Available == 0);
+            if (part1 && part2)
+                return false;
+            else
+                return true;
+        }
+
+        private void BAI06Client_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            // call reset button
+            ButtonReset_Click(null, null);
         }
     }
 }

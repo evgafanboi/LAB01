@@ -136,7 +136,6 @@
             // 
             // TextBoxFilePath
             // 
-            this.TextBoxFilePath.Enabled = false;
             this.TextBoxFilePath.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TextBoxFilePath.Location = new System.Drawing.Point(150, 387);
             this.TextBoxFilePath.Name = "TextBoxFilePath";
@@ -184,6 +183,7 @@
             this.Controls.Add(this.TextBoxMessage);
             this.Name = "BAI06Client";
             this.Text = "BAI06Client";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.BAI06Client_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -48,6 +48,9 @@ namespace LAB03
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                //call the reset button to close the connection
+                ButtonReset_Click(null, null);
+                return;
             }
                 int bytes_received = 0;
                 byte[] receive_bytes = new byte[1];

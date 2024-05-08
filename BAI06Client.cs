@@ -31,14 +31,14 @@ namespace LAB03
         List<string> sender_list;
         private void ButtonConnect_Click(object sender, EventArgs e)
         {
-            ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9090);
-            client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
-
             if (TextBoxName.Text == "")
             {
                 MessageBox.Show("Please enter your name");
                 return;
             }
+            ipep = new IPEndPoint(IPAddress.Parse("127.0.0.1"), 9090);
+            client = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
+
 
             try
             {
@@ -255,6 +255,7 @@ namespace LAB03
         private void ButtonReset_Click(object sender, EventArgs e)
         {
             // close connection
+            if(client != null)
             client.Close();
             //disable button send and combobox
             ButtonSend.Enabled = false;

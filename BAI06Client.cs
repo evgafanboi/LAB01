@@ -131,7 +131,7 @@ namespace LAB03
                     if (obj is Message_)
                     {
                         Message_ message_recv = (Message_)obj;
-                        // after that add to listbox //////////////////////////////////////////////////////////////////////////////////
+                        // after that add to listbox 
                         ListViewItem item = new ListViewItem();
                         item.Text = "[ " + message_recv._sender + " ]";
                         item.SubItems.Add(message_recv._content);

@@ -27,12 +27,7 @@ namespace LAB03
 
         IPEndPoint ipep;
         Socket server;
-        //List<Socket> client_list = new List<Socket>();
-        //hash table to store client name and socket
         Dictionary<string,Socket> client_table = new Dictionary<string,Socket>();
-        //hash table to client socket to client name
-
-        //List<string> client_names = new List<string>();
 
         private void ButtonListen_Click(object sender, EventArgs e)
         {
@@ -58,14 +53,9 @@ namespace LAB03
                                 //listen to client
                                 server.Listen(100);
                                 Socket client = server.Accept();
-                                //add client to list
-                                //client_list.Add(client);
 
-                                //hash table to store client id and client socket
-                                //Hashtable client_table = new Hashtable();
-                                //client_table.Add(client.RemoteEndPoint.ToString(), client);
-                                string clientName = "";
                                 //receive client name
+                                string clientName = "";
 
                                 while (clientName == "")
                                 {
@@ -142,24 +132,6 @@ namespace LAB03
                 });
                     UpdateClientList_Thread.IsBackground = true;
                     UpdateClientList_Thread.Start();
-
-            ////create a thread to poll client connection status
-            //Thread PollClient_Thread = new Thread(() =>
-            //{
-            //    while (true)
-            //    {
-            //        foreach (KeyValuePair<string, Socket> client in client_table)
-            //        {
-            //            if (!SocketConnected(client.Value))
-            //            {
-            //                client_table.Remove(client.Key);
-            //            }
-            //        }
-            //        Thread.Sleep(500);
-            //    }
-            //});
-            //PollClient_Thread.IsBackground = true;
-            //PollClient_Thread.Start();
         }
 
 
@@ -246,10 +218,6 @@ namespace LAB03
                     }
 
                     //handle case when receive a file
-                    // 
-                    //
-                    ///
-                    //
                     object recv_obj = (object)Desserialize(receivebytes);
                     if(recv_obj is Message_)
                     {
@@ -317,7 +285,6 @@ namespace LAB03
 
                 return;
             }
-            //handle case when receive a file
         }
 
 
@@ -336,16 +303,5 @@ namespace LAB03
             return stream.ToArray();
         }
 
-        bool SocketConnected(Socket s)
-        {
-            //poll the socket to check connection status, wait 1000ms
-            bool part1 = s.Poll(1000, SelectMode.SelectRead);
-            // if there is no data and the socket is not receiving data
-            bool part2 = (s.Available == 0);
-            if (part1 && part2)
-                return false;
-            else
-                return true;
-        }
     }
 }

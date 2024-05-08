@@ -97,7 +97,6 @@ namespace LAB03
             ComboBoxReceiver.Enabled = true;
             TextBoxName.Enabled = false;
             TextBoxMessage.Enabled = true;
-            TextBoxName.Enabled = true;
         }
 
         private void ButtonSend_Click(object sender, EventArgs e)
@@ -176,7 +175,80 @@ namespace LAB03
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //pick a file
+            OpenFileDialog fileDialog = new OpenFileDialog();
+            fileDialog.Filter = "All files (*.*)|*.*";
+            fileDialog.Title = "Select a 5000KB file to send";
 
+            if (fileDialog.ShowDialog() == DialogResult.OK)
+            {
+                // check if file is larger than 5KB
+                if (new FileInfo(fileDialog.FileName).Length > 1024 * 5000)
+                    {
+                        MessageBox.Show("File is larger than 5KB");
+                        return;
+                    }
+
+                if(fileDialog.CheckFileExists)
+                {
+                    // add file path to Textbox
+                    TextBoxFilePath.Text = fileDialog.FileName;
+                    FileStream fileStream = null;
+                    try
+                    {
+                        fileStream = new FileStream(fileDialog.FileName, FileMode.Open, FileAccess.Read);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Unable to access file");
+                    }
+
+                    //read file content into byte array
+                    byte[] fileContent = new byte[fileStream.Length];
+                    fileStream.Read(fileContent, 0, fileContent.Length);
+
+                    FileMessage fileMessage = new FileMessage();
+                    fileMessage.file_bytes = fileContent;
+                    fileMessage.receiver = ComboBoxReceiver.Text;
+
+                    //send file to server
+                    client.Send(Serialize(fileMessage));
+                    
+                    ////send file name
+                    //string fileName = fileDialog.FileName;
+                    //byte[] fileNameBytes = Encoding.UTF8.GetBytes(fileName);
+                    //client.Send(fileNameBytes);
+
+                    ////send file content
+                    //byte[] fileContent = File.ReadAllBytes(fileName);
+                    //client.Send(fileContent);
+
+                    ////clear message box
+                    //TextBoxMessage.Text = "";
+                    //// add to listbox
+                    //ListViewItem item = new ListViewItem();
+                    //item.Text = "[ " + TextBoxName.Text + " ]";
+                    //item.SubItems.Add("File: " + fileName);
+                    //ListViewOutput.Items.Add(item);
+                }
+
+                ////send file name
+                //string fileName = fileDialog.FileName;
+                //byte[] fileNameBytes = Encoding.UTF8.GetBytes(fileName);
+                //client.Send(fileNameBytes);
+
+                    ////send file content
+                    //byte[] fileContent = File.ReadAllBytes(fileName);
+                    //client.Send(fileContent);
+
+                    ////clear message box
+                    //TextBoxMessage.Text = "";
+                    //// add to listbox
+                    //ListViewItem item = new ListViewItem();
+                    //item.Text = "[ " + TextBoxName.Text + " ]";
+                    //item.SubItems.Add("File: " + fileName);
+                    //ListViewOutput.Items.Add(item);
+            }
         }
 
         private void ButtonReset_Click(object sender, EventArgs e)

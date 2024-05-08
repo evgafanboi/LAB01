@@ -189,11 +189,17 @@ namespace LAB03
                         continue;
                     }
 
+                    //handle case when receive a file
+                    // 
+                    //
+                    ///
+                    //
+
                     Message_ _message = (Message_)Desserialize(receivebytes);
 
                     //add message to listbox
                     ListViewItem item = new ListViewItem();
-                    item.Text = "[ " + _message._sender + " ]";
+                    item.Text = "[ " + _message._sender + " -> " + _message._receiver + "]";
                     item.SubItems.Add(_message._content);
                     ListViewOutput.Items.Add(item);
 

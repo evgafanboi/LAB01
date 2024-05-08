@@ -82,6 +82,7 @@
     <Compile Include="BAI06Server.Designer.cs">
       <DependentUpon>BAI06Server.cs</DependentUpon>
     </Compile>
+    <Compile Include="FileMessage.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

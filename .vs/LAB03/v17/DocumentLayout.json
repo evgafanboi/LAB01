@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\bai06client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab03\\bai06client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai06client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -15,7 +15,7 @@
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab03\\bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -48,7 +48,7 @@
               "RelativeDocumentMoniker": "BAI06Server.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Server.cs",
               "RelativeToolTip": "BAI06Server.cs",
-              "ViewState": "AQIAAHIAAAAAAAAAAAAmwIYAAAAvAAAA",
+              "ViewState": "AQIAAK0AAAAAAAAAAAAuwLgAAAA+AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-07T08:50:44.406Z",
               "EditorCaption": ""
@@ -73,7 +73,7 @@
               "RelativeDocumentMoniker": "BAI06Client.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs*",
               "RelativeToolTip": "BAI06Client.cs*",
-              "ViewState": "AQIAALkAAAAAAAAAAAAowMgAAAAXAAAA",
+              "ViewState": "AQIAALQAAAAAAAAAAAAiwMIAAAAjAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-06T03:46:48.179Z",
               "EditorCaption": ""

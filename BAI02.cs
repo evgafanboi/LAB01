@@ -48,16 +48,22 @@ namespace LAB03
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-                //call the reset button to close the connection
-                ButtonReset_Click(null, null);
                 return;
             }
                 int bytes_received = 0;
                 byte[] receive_bytes = new byte[1];
-            richTextBox1.Text = "Waiting for connection on port 8080...\n";
-            client_socket = listenerSocket.Accept();
-            richTextBox1.Text += "Connected to " + client_socket.RemoteEndPoint.ToString() + "\n";
-            Stopconnection = false;
+            try
+            {
+                richTextBox1.Text = "Waiting for connection on port 8080...\n";
+                client_socket = listenerSocket.Accept();
+                richTextBox1.Text += "Connected to " + client_socket.RemoteEndPoint.ToString() + "\n";
+                Stopconnection = false;
+            }
+
+            catch
+            {
+                return;
+            }
 
             while (SocketConnected(client_socket))
             {
@@ -97,7 +103,10 @@ namespace LAB03
         private void ButtonReset_Click(object sender, EventArgs e)
         {
             Stopconnection = true;
-            client_socket.Close();
+            if (listenerSocket != null)
+                listenerSocket.Close();
+            if (client_socket != null)
+                client_socket.Close();
             ButtonReset.Enabled = false;
             ButtonListen.Enabled = true;
             //clear the text box

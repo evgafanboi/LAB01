@@ -127,7 +127,7 @@ namespace LAB03
                     // set buffer size
                     byte[] data = new byte[1024 * 5000];
                     client.Receive(data);
-                    object obj = Desserialize(data);
+                    object obj = Deserialize(data);
                     if (obj is Message_)
                     {
                         Message_ message_recv = (Message_)obj;
@@ -185,7 +185,7 @@ namespace LAB03
 
         }
 
-        object Desserialize(byte[] data)
+        object Deserialize(byte[] data)
         {
             MemoryStream stream = new MemoryStream(data);
             BinaryFormatter formatter = new BinaryFormatter();

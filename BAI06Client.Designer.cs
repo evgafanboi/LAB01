@@ -152,7 +152,7 @@
             this.ButtonSendFile.TabIndex = 11;
             this.ButtonSendFile.Text = "Send File";
             this.ButtonSendFile.UseVisualStyleBackColor = true;
-            this.ButtonSendFile.Click += new System.EventHandler(this.button1_Click);
+            this.ButtonSendFile.Click += new System.EventHandler(this.ButtonSendFile_Click);
             // 
             // ButtonReset
             // 

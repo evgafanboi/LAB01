@@ -192,7 +192,7 @@ namespace LAB03
             return formatter.Deserialize(stream);
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void ButtonSendFile_Click(object sender, EventArgs e)
         {
             //pick a file
             OpenFileDialog fileDialog = new OpenFileDialog();

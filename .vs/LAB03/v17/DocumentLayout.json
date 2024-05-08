@@ -11,6 +11,14 @@
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai06client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab03\\bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab03\\bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai06server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{14D7852B-8D27-4433-9792-1909143F4425}|LAB03.csproj|solutionrelative:bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -26,8 +34,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BAI02.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs",
+              "RelativeDocumentMoniker": "BAI02.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs",
+              "RelativeToolTip": "BAI02.cs",
+              "ViewState": "AQIAAC0AAAAAAAAAAAASwEYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:01:23.52Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BAI06Client.cs [Design]",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs",
+              "RelativeDocumentMoniker": "BAI06Client.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs [Design]",
+              "RelativeToolTip": "BAI06Client.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T13:33:30.828Z",
+              "IsPinned": true,
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BAI06Server.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Server.cs",
+              "RelativeDocumentMoniker": "BAI06Server.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Server.cs",
+              "RelativeToolTip": "BAI06Server.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T14:45:09.97Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BAI06Server.cs [Design]",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Server.cs",
+              "RelativeDocumentMoniker": "BAI06Server.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Server.cs [Design]",
+              "RelativeToolTip": "BAI06Server.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T14:45:07.614Z",
+              "EditorCaption": " [Design]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -46,46 +106,24 @@
               "Title": "BAI06Client.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs",
               "RelativeDocumentMoniker": "BAI06Client.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs*",
-              "RelativeToolTip": "BAI06Client.cs*",
-              "ViewState": "AQIAAPUAAAAAAAAAAADgvwEBAAAdAAAA",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs",
+              "RelativeToolTip": "BAI06Client.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAlwCUAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-08T13:33:32.342Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BAI06Client.cs [Design]",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs",
-              "RelativeDocumentMoniker": "BAI06Client.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI06Client.cs [Design]",
-              "RelativeToolTip": "BAI06Client.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:33:30.828Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BAI02.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs",
-              "RelativeDocumentMoniker": "BAI02.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs",
-              "RelativeToolTip": "BAI02.cs",
-              "ViewState": "AQIAAC0AAAAAAAAAAAASwEYAAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:01:23.52Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "BAI02.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs",
               "RelativeDocumentMoniker": "BAI02.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB03\\BAI02.cs [Design]",
               "RelativeToolTip": "BAI02.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-08T13:01:20.829Z"
+              "WhenOpened": "2024-05-08T13:01:20.829Z",
+              "EditorCaption": " [Design]"
             }
           ]
         }

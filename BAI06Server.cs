@@ -67,7 +67,9 @@ namespace LAB03
                                     }
                                     catch
                                     {
-                                        Console.WriteLine("Client name is not available");
+                                        //if client name is not available, close connection
+                                        client.Close();
+                                        return;
                                     }
                                 }
 

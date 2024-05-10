@@ -12,9 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\saigon\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\saigon\\.nuget\\packages",
-      "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      "C:\\Users\\EVGA Fan Boi\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\EVGA Fan Boi\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

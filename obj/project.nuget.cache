@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "1O5weeZVhl6X7HqFnvBTIsFZRrUBzVY1B38AlV1EVtOFof/oXPHQn+DVgLdgcW3c76pB/DHFzijO/bElkj/qUw==",
+  "dgSpecHash": "NRxB1iHznowoGNIzxgKEZkrJnIdF2Nx5LJf/ZNJ0+uoPS2vDny2yZwUvSv1D9jjZ6sAUmp+OlonrWYXWCh3p2w==",
   "success": true,
-  "projectFilePath": "A:\\Programs\\VS 2022\\LAB04\\LAB04.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vinh-PC\\.nuget\\packages\\htmlagilitypack\\1.11.61\\htmlagilitypack.1.11.61.nupkg.sha512",
+    "C:\\Users\\Vinh-PC\\.nuget\\packages\\microsoft.web.webview2\\1.0.2478.35\\microsoft.web.webview2.1.0.2478.35.nupkg.sha512",
+    "C:\\Users\\Vinh-PC\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

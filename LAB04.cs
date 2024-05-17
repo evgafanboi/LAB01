@@ -35,14 +35,14 @@ namespace LAB04
 
         private void button4_Click(object sender, EventArgs e)
         {
-            //BAI05 f5 = new BAI05();
-            //f5.Show();
+            BAI05 f5 = new BAI05();
+            f5.Show();
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            //BAI06 f6 = new BAI06();
-            //f6.Show();
+            BAI06 f6 = new BAI06();
+            f6.Show();
         }
 
         private void button6_Click(object sender, EventArgs e)

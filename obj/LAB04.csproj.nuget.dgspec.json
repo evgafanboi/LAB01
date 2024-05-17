@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "A:\\Programs\\VS 2022\\LAB04\\LAB04.csproj": {}
+    "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.csproj": {}
   },
   "projects": {
-    "A:\\Programs\\VS 2022\\LAB04\\LAB04.csproj": {
+    "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\Programs\\VS 2022\\LAB04\\LAB04.csproj",
+        "projectUniqueName": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.csproj",
         "projectName": "LAB04",
-        "projectPath": "A:\\Programs\\VS 2022\\LAB04\\LAB04.csproj",
-        "packagesPath": "C:\\Users\\EVGA Fan Boi\\.nuget\\packages\\",
-        "outputPath": "A:\\Programs\\VS 2022\\LAB04\\obj\\",
+        "projectPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.csproj",
+        "packagesPath": "C:\\Users\\Vinh-PC\\.nuget\\packages\\",
+        "outputPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\EVGA Fan Boi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Vinh-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,11 +34,30 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "HtmlAgilityPack": {
+              "target": "Package",
+              "version": "[1.11.61, )"
+            },
+            "Microsoft.Web.WebView2": {
+              "target": "Package",
+              "version": "[1.0.2478.35, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -58,7 +77,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

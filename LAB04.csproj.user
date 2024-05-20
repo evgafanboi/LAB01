@@ -19,6 +19,24 @@
     <Compile Update="BAI06.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="BAI07.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BAI07Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BAI07CreateAccount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BAI07Food.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="BAI07Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="BAI07RandomWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="LAB04.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -46,3 +46,10 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.csproj
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.genruntimeconfig.cache
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\ref\LAB04.dll
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI06.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI04.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07Add.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07CreateAccount.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07Food.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07Login.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07RandomWindow.resources

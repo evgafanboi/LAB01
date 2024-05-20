@@ -84,6 +84,8 @@ namespace LAB04
                     //update richtextbox
                     RichTextBoxOutput.Text = token_type + "\n" + access_token + "\n Loged In"  ;
                 }
+                else
+                MessageBox.Show("Could not receive data from Server");
             }
             catch
             {

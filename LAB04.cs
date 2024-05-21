@@ -47,8 +47,8 @@ namespace LAB04
 
         private void button6_Click(object sender, EventArgs e)
         {
-            //BAI07 f7 = new BAI07();
-            //f7.Show();
+            BAI07 f7 = new BAI07();
+            f7.Show();
         }
 
         private void button8_Click(object sender, EventArgs e)

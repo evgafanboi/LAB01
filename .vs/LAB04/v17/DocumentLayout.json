@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -34,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,7 +54,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "BAI06.cs",
+              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI06.cs",
+              "RelativeDocumentMoniker": "BAI06.cs",
+              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI06.cs",
+              "RelativeToolTip": "BAI06.cs",
+              "ViewState": "AQIAAE0AAAAAAAAAAAAAAGQAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-21T15:13:12.507Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "BAI04.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI04.cs",
               "RelativeDocumentMoniker": "BAI04.cs",
@@ -58,12 +75,11 @@
               "RelativeToolTip": "BAI04.cs",
               "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:43:39.001Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T14:43:39.001Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "BAI04.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI04.cs",
               "RelativeDocumentMoniker": "BAI04.cs",
@@ -75,20 +91,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "BAI05.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI05.cs",
               "RelativeDocumentMoniker": "BAI05.cs",
               "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI05.cs",
               "RelativeToolTip": "BAI05.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAAAFwAAAAAAAAA",
+              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFcAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:35:32.54Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T14:35:32.54Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LAB04.cs",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.cs",
               "RelativeDocumentMoniker": "LAB04.cs",
@@ -100,7 +115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BAI05.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI05.cs",
               "RelativeDocumentMoniker": "BAI05.cs",
@@ -112,7 +127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "LAB04.cs [Design]",
               "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.cs",
               "RelativeDocumentMoniker": "LAB04.cs",

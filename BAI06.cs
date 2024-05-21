@@ -69,6 +69,7 @@ namespace LAB04
             catch
             {
                 MessageBox.Show("Failed to send POST request to server");
+                return;
             }
             string access_token = "";
             string token_type = ""; 
@@ -90,7 +91,15 @@ namespace LAB04
             catch
             {
                 MessageBox.Show("Could not receive data from Server");
+                return;
             }
+
+            if (string.IsNullOrEmpty(access_token) || string.IsNullOrEmpty(token_type))
+            {
+                MessageBox.Show("Could not receive data from Server");
+                return;
+            }
+
             client.Dispose();
             client = new HttpClient();
             url = "https://nt106.uitiot.vn/api/v1/user/me";
@@ -135,6 +144,7 @@ namespace LAB04
             else
             {
                 MessageBox.Show("Failed to get data from server");
+                return;
             }
             //close connection
             client.Dispose();

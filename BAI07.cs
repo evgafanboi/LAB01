@@ -36,7 +36,12 @@ namespace LAB04
         private int available { get; set; }    // Mot bien total de giu tong so cac mon an
         private string username { get; set; }
         private string password { get; set; }
+<<<<<<< HEAD
         private List<BAI07Food> selfFood {  get; set; } // Mot mang chi chua cac mon an cua ban than de tien cho viec random
+=======
+        private List<BAI07Food> selfFood { get; set; } // Mot mang chi chua cac mon an cua ban than
+        private int[] selfFoodIDs { get; set; } // Mot mang chi chua cac id mon an cua ban than
+>>>>>>> 24b7506 (BAI07 finalized)
         public BAI07()
         {
             InitializeComponent();
@@ -53,9 +58,14 @@ namespace LAB04
 
                     Random rand = new Random();
                     int RandomIndex = rand.Next(0, selfFood.Count);
+<<<<<<< HEAD
                     BAI07Food randomFood = selfFood[RandomIndex];
                     BAI07RandomWindow view = new BAI07RandomWindow(randomFood);
                     view.Show();
+=======
+                    int randomID = selfFoodIDs[RandomIndex];
+                    await GetMonAn(randomID);
+>>>>>>> 24b7506 (BAI07 finalized)
                     return;
                 }
                 else
@@ -209,14 +219,28 @@ namespace LAB04
                 }
                 else
                 {
+<<<<<<< HEAD
+=======
+                    int[] IDarray = new int[foodArray.Count];
+                    int i = 0;
+>>>>>>> 24b7506 (BAI07 finalized)
                     selfFood = foodArray;   // Neu dang o che do ca nhan, luu vao array
                     MyFoodFlow.Controls.Clear();
                     foreach (BAI07Food food in foodArray)
                     {
+<<<<<<< HEAD
+=======
+                        IDarray[i] = Int32.Parse(food.id); i++;
+>>>>>>> 24b7506 (BAI07 finalized)
                         MyFoodFlow.Controls.Add(food);
                         food.CastImage();   // Goi ham rieng de lay anh bang webclient va dua len picturebox
                         ProgressBar.Value++;
                     }
+<<<<<<< HEAD
+=======
+
+                    selfFoodIDs = IDarray;
+>>>>>>> 24b7506 (BAI07 finalized)
                 }
             }
             ProgressBar.Value = 100;
@@ -278,9 +302,22 @@ namespace LAB04
         private async void TabView_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (ViewMode)
+<<<<<<< HEAD
                 ViewMode = false;
             else
                 ViewMode = true;
+=======
+            {
+                ViewMode = false;
+                Deletebtn.Enabled = false;
+            }
+
+            else
+            {
+                ViewMode = true;
+                Deletebtn.Enabled = true;
+            }
+>>>>>>> 24b7506 (BAI07 finalized)
 
             await FetchFoodList(ViewMode);
         }
@@ -297,6 +334,7 @@ namespace LAB04
 
         private async Task GetMonAn(int Id)
         {
+<<<<<<< HEAD
                 using (var client = new HttpClient())
                 {
                     // Xu ly authorization token
@@ -327,6 +365,35 @@ namespace LAB04
                 }
             }
         
+=======
+            using (var client = new HttpClient())
+            {
+                // Xu ly authorization token
+                client.DefaultRequestHeaders.Add("Authorization", $"{tokenType} {accessToken}");
+                client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", $"{accessToken}");
+                var response = await client.GetAsync($"https://nt106.uitiot.vn/api/v1/monan/{Id}");
+
+                ProgressBar.Value = 40;
+
+                // Bat loi
+                if (!response.IsSuccessStatusCode)
+                {
+                    MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK);
+                    return;
+                }
+
+                // Dua response ve dang json object
+                var responseString = await response.Content.ReadAsStringAsync();
+                var jsonResponse = JObject.Parse(responseString);
+
+                // Chuyen json object ve BAI07Food object
+                BAI07Food RandomFood = jsonResponse.ToObject<BAI07Food>();
+                BAI07RandomWindow RandomPopUp = new BAI07RandomWindow(RandomFood, "Hôm nay ăn " + RandomFood.nameFood); // food and the title of the pop up
+                RandomPopUp.Show();
+            }
+        }
+
+>>>>>>> 24b7506 (BAI07 finalized)
 
         private async void AddFoodbtn_Click(object sender, EventArgs e)
         {
@@ -346,7 +413,12 @@ namespace LAB04
                     //POST
                     var content = new StringContent(jsonContent, Encoding.UTF8, "application/json");
                     var response = await client.PostAsync("https://nt106.uitiot.vn/api/v1/monan/add", content);
+<<<<<<< HEAD
                     if (response.IsSuccessStatusCode) {
+=======
+                    if (response.IsSuccessStatusCode)
+                    {
+>>>>>>> 24b7506 (BAI07 finalized)
                         MessageBox.Show("Thêm món ăn thành công!", "Thông báo", MessageBoxButtons.OK);
                     }
                     else
@@ -357,7 +429,11 @@ namespace LAB04
 
         }
 
+<<<<<<< HEAD
         private async Task ResetToken()
+=======
+        private async Task ResetToken() // =========Buggy==========
+>>>>>>> 24b7506 (BAI07 finalized)
         {
             using (var client = new HttpClient())
             {
@@ -378,5 +454,36 @@ namespace LAB04
                     MessageBox.Show("Đăng xuất thất bại!", "Thông báo", MessageBoxButtons.OK);
             }
         }
+<<<<<<< HEAD
+=======
+
+        private async void Deletebtn_Click(object sender, EventArgs e)
+        {
+            string Id;
+            BAI07Delete inputForm = new BAI07Delete(selfFoodIDs);
+            if (inputForm.ShowDialog() == DialogResult.OK)
+            {
+                Id = inputForm.ID;
+                using (var client = new HttpClient())
+                {
+                    // Xu ly authorization token
+                    client.DefaultRequestHeaders.Add("Authorization", $"{tokenType} {accessToken}");
+                    client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", $"{accessToken}");
+                    var response = await client.DeleteAsync($"https://nt106.uitiot.vn/api/v1/monan/{Id}");
+
+                    ProgressBar.Value = 40;
+
+                    // Bat loi
+                    if (!response.IsSuccessStatusCode)
+                    {
+                        MessageBox.Show("Lỗi", "Thông báo", MessageBoxButtons.OK);
+                        return;
+                    }
+                    MessageBox.Show("Xóa món ăn thành công", "Thông báo", MessageBoxButtons.OK);
+                    return;
+                }
+            }
+        }
+>>>>>>> 24b7506 (BAI07 finalized)
     }
 }

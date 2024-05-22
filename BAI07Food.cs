@@ -19,7 +19,14 @@ namespace LAB04
         public BAI07Food()
         {
             InitializeComponent();
+<<<<<<< HEAD
         }
+=======
+
+            this.Click += BAI07Food_Click;
+        }
+
+>>>>>>> 24b7506 (BAI07 finalized)
         [JsonProperty("id")]
         public string id { get; set; }
         [JsonProperty("ten_mon_an")]
@@ -68,5 +75,13 @@ namespace LAB04
                 MessageBox.Show($"Lỗi: {ex.Message}", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+<<<<<<< HEAD
+=======
+
+        private void BAI07Food_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"Món {this.nameFood} có ID = {this.id}", "Thông báo", MessageBoxButtons.OK);
+        }
+>>>>>>> 24b7506 (BAI07 finalized)
     }
 }

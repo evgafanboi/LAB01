@@ -53,3 +53,43 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07C
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07Food.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07Login.resources
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAB01\obj\Debug\net8.0-windows\LAB04.BAI07RandomWindow.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.csproj.AssemblyReference.cache
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI01.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI02.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI03.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI04.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI05.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI06.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI07.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI07Add.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI07CreateAccount.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI07Delete.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI07Food.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI07Login.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.BAI07RandomWindow.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.LAB04.resources
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.csproj.GenerateResource.cache
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.GeneratedMSBuildEditorConfig.editorconfig
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.AssemblyInfoInputs.cache
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.AssemblyInfo.cs
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.csproj.CoreCompileInputs.cache
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.sourcelink.json
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.dll
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\refint\LAB04.dll
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.pdb
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\runtimes\win-x86\native\WebView2Loader.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\runtimes\win-x64\native\WebView2Loader.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\runtimes\win-arm64\native\WebView2Loader.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\LAB04.exe
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\LAB04.deps.json
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\LAB04.runtimeconfig.json
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\LAB04.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\LAB04.pdb
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\HtmlAgilityPack.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Core.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.WinForms.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\Microsoft.Web.WebView2.Wpf.dll
+A:\Programs\VS 2022\LAB04\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.csproj.CopyComplete
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\LAB04.genruntimeconfig.cache
+A:\Programs\VS 2022\LAB04\obj\Debug\net8.0-windows\ref\LAB04.dll

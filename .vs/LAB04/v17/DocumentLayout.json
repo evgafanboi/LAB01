@@ -1,34 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\",
+  "WorkspaceRootPath": "A:\\Programs\\VS 2022\\LAB04\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai05.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\lab04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|a:\\programs\\vs 2022\\lab04\\lab04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:lab04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|d:\\tai_lieu_hoc\\visualstudioprojects\\lab01\\lab04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|a:\\programs\\vs 2022\\lab04\\lab04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:lab04.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|a:\\programs\\vs 2022\\lab04\\bai07delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07delete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07createaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07randomwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07randomwindow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai02.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai03.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai06.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07food.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07add.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|A:\\Programs\\VS 2022\\LAB04\\bai07login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C5452467-0087-4A1D-B3DD-6DAD060E6FAD}|LAB04.csproj|solutionrelative:bai07login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,8 +82,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BAI07.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07.cs",
+              "RelativeDocumentMoniker": "BAI07.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07.cs",
+              "RelativeToolTip": "BAI07.cs",
+              "ViewState": "AQIAAFcBAAAAAAAAAAAAAGgBAABuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T10:38:10.031Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LAB04.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\LAB04.cs",
+              "RelativeDocumentMoniker": "LAB04.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\LAB04.cs",
+              "RelativeToolTip": "LAB04.cs",
+              "ViewState": "AQIAACYAAAAAAAAAAAAkwDkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:55:22.351Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "LAB04.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\LAB04.cs",
+              "RelativeDocumentMoniker": "LAB04.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\LAB04.cs [Design]",
+              "RelativeToolTip": "LAB04.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T14:56:06.137Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -50,92 +149,181 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BAI06.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI06.cs",
-              "RelativeDocumentMoniker": "BAI06.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI06.cs",
-              "RelativeToolTip": "BAI06.cs",
-              "ViewState": "AQIAAE0AAAAAAAAAAAAAAGQAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-21T15:13:12.507Z",
-              "EditorCaption": ""
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "BAI04.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI04.cs",
-              "RelativeDocumentMoniker": "BAI04.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI04.cs",
-              "RelativeToolTip": "BAI04.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Title": "BAI07Delete.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07Delete.cs",
+              "RelativeDocumentMoniker": "BAI07Delete.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07Delete.cs",
+              "RelativeToolTip": "BAI07Delete.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB4AAAAiAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:43:39.001Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BAI04.cs [Design]",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI04.cs",
-              "RelativeDocumentMoniker": "BAI04.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI04.cs [Design]",
-              "RelativeToolTip": "BAI04.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:43:35.707Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "BAI05.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI05.cs",
-              "RelativeDocumentMoniker": "BAI05.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI05.cs",
-              "RelativeToolTip": "BAI05.cs",
-              "ViewState": "AQIAAD8AAAAAAAAAAAAAAFcAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-20T14:35:32.54Z"
+              "WhenOpened": "2024-05-22T07:27:51.484Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "LAB04.cs",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.cs",
-              "RelativeDocumentMoniker": "LAB04.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.cs",
-              "RelativeToolTip": "LAB04.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAawCwAAAAWAAAA",
+              "Title": "BAI07.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07.cs",
+              "RelativeDocumentMoniker": "BAI07.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07.cs [Design]",
+              "RelativeToolTip": "BAI07.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T09:58:47.688Z"
+              "WhenOpened": "2024-05-22T04:17:58.567Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "BAI05.cs [Design]",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI05.cs",
-              "RelativeDocumentMoniker": "BAI05.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\BAI05.cs [Design]",
-              "RelativeToolTip": "BAI05.cs [Design]",
+              "DocumentIndex": 11,
+              "Title": "BAI02.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI02.cs",
+              "RelativeDocumentMoniker": "BAI02.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI02.cs [Design]",
+              "RelativeToolTip": "BAI02.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T09:58:41.144Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-22T04:12:57.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BAI02.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI02.cs",
+              "RelativeDocumentMoniker": "BAI02.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI02.cs",
+              "RelativeToolTip": "BAI02.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAAYwCAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T03:33:56.218Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BAI03.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI03.cs",
+              "RelativeDocumentMoniker": "BAI03.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI03.cs",
+              "RelativeToolTip": "BAI03.cs",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAwwDEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-11T14:02:31.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BAI07Food.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07Food.cs",
+              "RelativeDocumentMoniker": "BAI07Food.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07Food.cs",
+              "RelativeToolTip": "BAI07Food.cs",
+              "ViewState": "AQIAAC4AAAAAAAAAAAAqwE0AAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-17T13:43:25.225Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "BAI07RandomWindow.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07RandomWindow.cs",
+              "RelativeDocumentMoniker": "BAI07RandomWindow.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07RandomWindow.cs",
+              "RelativeToolTip": "BAI07RandomWindow.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T07:37:55.281Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "BAI07CreateAccount.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07CreateAccount.cs",
+              "RelativeDocumentMoniker": "BAI07CreateAccount.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07CreateAccount.cs [Design]",
+              "RelativeToolTip": "BAI07CreateAccount.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T14:12:23.587Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "LAB04.cs [Design]",
-              "DocumentMoniker": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.cs",
-              "RelativeDocumentMoniker": "LAB04.cs",
-              "ToolTip": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.cs [Design]",
-              "RelativeToolTip": "LAB04.cs [Design]",
+              "Title": "BAI07CreateAccount.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07CreateAccount.cs",
+              "RelativeDocumentMoniker": "BAI07CreateAccount.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07CreateAccount.cs",
+              "RelativeToolTip": "BAI07CreateAccount.cs",
+              "ViewState": "AQIAABoAAAAAAAAAAAApwBQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-16T09:58:16.479Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-05-15T13:15:52.214Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "BAI03.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI03.cs",
+              "RelativeDocumentMoniker": "BAI03.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI03.cs [Design]",
+              "RelativeToolTip": "BAI03.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T03:32:15.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "BAI06.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI06.cs",
+              "RelativeDocumentMoniker": "BAI06.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI06.cs [Design]",
+              "RelativeToolTip": "BAI06.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T03:53:32.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "BAI07Food.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07Food.cs",
+              "RelativeDocumentMoniker": "BAI07Food.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07Food.cs [Design]",
+              "RelativeToolTip": "BAI07Food.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-22T02:42:48.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "BAI07Add.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07Add.cs",
+              "RelativeDocumentMoniker": "BAI07Add.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07Add.cs",
+              "RelativeToolTip": "BAI07Add.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAEwCgAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-18T06:24:28.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "BAI07Login.cs",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07Login.cs",
+              "RelativeDocumentMoniker": "BAI07Login.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07Login.cs",
+              "RelativeToolTip": "BAI07Login.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAuwBwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T14:34:21.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "BAI07Login.cs [Design]",
+              "DocumentMoniker": "A:\\Programs\\VS 2022\\LAB04\\BAI07Login.cs",
+              "RelativeDocumentMoniker": "BAI07Login.cs",
+              "ToolTip": "A:\\Programs\\VS 2022\\LAB04\\BAI07Login.cs [Design]",
+              "RelativeToolTip": "BAI07Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T05:24:57.406Z"
             }
           ]
         }

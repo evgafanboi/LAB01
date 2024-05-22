@@ -46,10 +46,8 @@
             label4 = new Label();
             PageCapCB = new ComboBox();
             CurrentPageCB = new ComboBox();
-<<<<<<< HEAD
-=======
             Deletebtn = new Button();
->>>>>>> 24b7506 (BAI07 finalized)
+
             TabView.SuspendLayout();
             AllTabPage.SuspendLayout();
             SelfTabView.SuspendLayout();
@@ -241,8 +239,6 @@
             CurrentPageCB.Text = "1";
             CurrentPageCB.SelectedIndexChanged += CurrentPageCB_SelectedIndexChanged;
             // 
-<<<<<<< HEAD
-=======
             // Deletebtn
             // 
             Deletebtn.Enabled = false;
@@ -256,17 +252,13 @@
             Deletebtn.UseVisualStyleBackColor = true;
             Deletebtn.Click += Deletebtn_Click;
             // 
->>>>>>> 24b7506 (BAI07 finalized)
             // BAI07
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.DarkSlateGray;
             ClientSize = new Size(668, 822);
-<<<<<<< HEAD
-=======
             Controls.Add(Deletebtn);
->>>>>>> 24b7506 (BAI07 finalized)
             Controls.Add(PageCapCB);
             Controls.Add(CurrentPageCB);
             Controls.Add(label4);
@@ -307,9 +299,6 @@
         private TabPage AllTabPage;
         private FlowLayoutPanel AllFoodFlow;
         private FlowLayoutPanel MyFoodFlow;
-<<<<<<< HEAD
-=======
         private Button Deletebtn;
->>>>>>> 24b7506 (BAI07 finalized)
     }
 }

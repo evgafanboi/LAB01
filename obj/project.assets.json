@@ -252,19 +252,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Vinh-PC\\.nuget\\packages\\": {}
+    "C:\\Users\\EVGA Fan Boi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.csproj",
+      "projectUniqueName": "A:\\Programs\\VS 2022\\LAB04\\LAB04.csproj",
       "projectName": "LAB04",
-      "projectPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\LAB04.csproj",
-      "packagesPath": "C:\\Users\\Vinh-PC\\.nuget\\packages\\",
-      "outputPath": "D:\\Tai_Lieu_Hoc\\VisualStudioProjects\\LAB01\\obj\\",
+      "projectPath": "A:\\Programs\\VS 2022\\LAB04\\LAB04.csproj",
+      "packagesPath": "C:\\Users\\EVGA Fan Boi\\.nuget\\packages\\",
+      "outputPath": "A:\\Programs\\VS 2022\\LAB04\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Vinh-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\EVGA Fan Boi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -272,6 +272,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -284,11 +285,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -327,7 +323,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

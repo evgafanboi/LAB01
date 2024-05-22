@@ -127,6 +127,7 @@
             button8.TabIndex = 8;
             button8.Text = "Exit";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // LAB04
             // 

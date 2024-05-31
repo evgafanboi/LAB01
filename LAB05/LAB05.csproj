@@ -84,6 +84,12 @@
     <Compile Include="BAI02.Designer.cs">
       <DependentUpon>BAI02.cs</DependentUpon>
     </Compile>
+    <Compile Include="BAI06.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BAI06.Designer.cs">
+      <DependentUpon>BAI06.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

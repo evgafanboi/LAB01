@@ -34,3 +34,4 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.csproj
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.csproj.Up2Date
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.exe
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.pdb
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.BAI06.resources

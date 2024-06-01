@@ -28,69 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
+            this.ButtonBai01 = new System.Windows.Forms.Button();
+            this.ButtonBai02 = new System.Windows.Forms.Button();
+            this.ButtonBai03 = new System.Windows.Forms.Button();
+            this.ButtonBai04 = new System.Windows.Forms.Button();
+            this.ButtonBai06 = new System.Windows.Forms.Button();
+            this.ButtonBai05 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // button1
+            // ButtonBai01
             // 
-            this.button1.Location = new System.Drawing.Point(63, 111);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Bài 1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.ButtonBai01.Location = new System.Drawing.Point(63, 111);
+            this.ButtonBai01.Name = "ButtonBai01";
+            this.ButtonBai01.Size = new System.Drawing.Size(75, 23);
+            this.ButtonBai01.TabIndex = 0;
+            this.ButtonBai01.Text = "Bài 1";
+            this.ButtonBai01.UseVisualStyleBackColor = true;
             // 
-            // button2
+            // ButtonBai02
             // 
-            this.button2.Location = new System.Drawing.Point(167, 111);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 23);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Bài 2";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.ButtonBai02.Location = new System.Drawing.Point(167, 111);
+            this.ButtonBai02.Name = "ButtonBai02";
+            this.ButtonBai02.Size = new System.Drawing.Size(75, 23);
+            this.ButtonBai02.TabIndex = 1;
+            this.ButtonBai02.Text = "Bài 2";
+            this.ButtonBai02.UseVisualStyleBackColor = true;
+            this.ButtonBai02.Click += new System.EventHandler(this.ButtonBai02_Click);
             // 
-            // button3
+            // ButtonBai03
             // 
-            this.button3.Location = new System.Drawing.Point(63, 155);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Bài 3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.ButtonBai03.Location = new System.Drawing.Point(63, 155);
+            this.ButtonBai03.Name = "ButtonBai03";
+            this.ButtonBai03.Size = new System.Drawing.Size(75, 23);
+            this.ButtonBai03.TabIndex = 2;
+            this.ButtonBai03.Text = "Bài 3";
+            this.ButtonBai03.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // ButtonBai04
             // 
-            this.button4.Location = new System.Drawing.Point(167, 155);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Bài 4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.ButtonBai04.Location = new System.Drawing.Point(167, 155);
+            this.ButtonBai04.Name = "ButtonBai04";
+            this.ButtonBai04.Size = new System.Drawing.Size(75, 23);
+            this.ButtonBai04.TabIndex = 3;
+            this.ButtonBai04.Text = "Bài 4";
+            this.ButtonBai04.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // ButtonBai06
             // 
-            this.button5.Location = new System.Drawing.Point(167, 212);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 23);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Bài 6";
-            this.button5.UseVisualStyleBackColor = true;
+            this.ButtonBai06.Location = new System.Drawing.Point(167, 212);
+            this.ButtonBai06.Name = "ButtonBai06";
+            this.ButtonBai06.Size = new System.Drawing.Size(75, 23);
+            this.ButtonBai06.TabIndex = 4;
+            this.ButtonBai06.Text = "Bài 6";
+            this.ButtonBai06.UseVisualStyleBackColor = true;
+            this.ButtonBai06.Click += new System.EventHandler(this.ButtonBai06_Click);
             // 
-            // button6
+            // ButtonBai05
             // 
-            this.button6.Location = new System.Drawing.Point(63, 212);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 23);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Bài 5";
-            this.button6.UseVisualStyleBackColor = true;
+            this.ButtonBai05.Location = new System.Drawing.Point(63, 212);
+            this.ButtonBai05.Name = "ButtonBai05";
+            this.ButtonBai05.Size = new System.Drawing.Size(75, 23);
+            this.ButtonBai05.TabIndex = 5;
+            this.ButtonBai05.Text = "Bài 5";
+            this.ButtonBai05.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -109,12 +110,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(290, 303);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button6);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.ButtonBai05);
+            this.Controls.Add(this.ButtonBai06);
+            this.Controls.Add(this.ButtonBai04);
+            this.Controls.Add(this.ButtonBai03);
+            this.Controls.Add(this.ButtonBai02);
+            this.Controls.Add(this.ButtonBai01);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -124,12 +125,12 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button ButtonBai01;
+        private System.Windows.Forms.Button ButtonBai02;
+        private System.Windows.Forms.Button ButtonBai03;
+        private System.Windows.Forms.Button ButtonBai04;
+        private System.Windows.Forms.Button ButtonBai06;
+        private System.Windows.Forms.Button ButtonBai05;
         private System.Windows.Forms.Label label1;
     }
 }

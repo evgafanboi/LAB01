@@ -17,10 +17,16 @@ namespace LAB05
             InitializeComponent();
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void ButtonBai02_Click(object sender, EventArgs e)
         {
             BAI02 bAI02 = new BAI02();
             bAI02.Show();
+        }
+
+        private void ButtonBai06_Click(object sender, EventArgs e)
+        {
+            BAI06 bAI06 = new BAI06();
+            bAI06.Show();
         }
     }
 }

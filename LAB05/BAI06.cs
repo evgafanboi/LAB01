@@ -1,4 +1,5 @@
 ﻿using MailKit.Net.Imap;
+using MailKit.Net.Smtp;
 using MimeKit;
 using System;
 using System.Collections.Generic;
@@ -7,7 +8,6 @@ using System.Data;
 using System.Drawing;
 using System.IO;
 using System.Linq;
-using System.Net.Mail;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -22,11 +22,14 @@ namespace LAB05
         }
 
             ImapClient client = new ImapClient();
+            SmtpClient smtpClient = new SmtpClient();
+
         private async void ButtonLogin_Click(object sender, EventArgs e)
         {
             try
             {
                 await client.ConnectAsync("imap.gmail.com", 993, true);
+                await smtpClient.ConnectAsync("smtp.gmail.com", 587, true);
             }
             catch
             {
@@ -37,6 +40,7 @@ namespace LAB05
             try
             {
                 await client.AuthenticateAsync(TextBoxEmail.Text, TextBoxPassword.Text);
+                await smtpClient.AuthenticateAsync(TextBoxEmail.Text, TextBoxPassword.Text);
             }
             catch
             {
@@ -74,6 +78,8 @@ namespace LAB05
         {
             client.Dispose();
             client = new ImapClient();
+            smtpClient.Dispose();
+            smtpClient = new SmtpClient();
             ButtonLogOut.Enabled = false;
             ButtonLogin.Enabled = true;
             TextBoxEmail.Enabled = true;
@@ -91,10 +97,15 @@ namespace LAB05
                 //open the selected email
                 MimeMessage message = client.Inbox.GetMessage(listView1.SelectedItems[0].Index);
                 //MessageBox.Show(message.HtmlBody);
-                BAI06form2 form2 = new BAI06form2(message.From, message.To, message.HtmlBody,message.Subject);
+                BAI06form2 form2 = new BAI06form2(message.From, message.To, message.HtmlBody,message.Subject,smtpClient);
                 form2.Show();
                 
             }
+
+        }
+
+        private void ButtonSend_Click(object sender, EventArgs e)
+        {
 
         }
     }

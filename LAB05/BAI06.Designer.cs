@@ -38,6 +38,7 @@
             this.TextBoxPassword = new System.Windows.Forms.TextBox();
             this.TextBoxEmail = new System.Windows.Forms.TextBox();
             this.ButtonLogOut = new System.Windows.Forms.Button();
+            this.ButtonSend = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listView1
@@ -47,7 +48,7 @@
             this.Sender,
             this.Date});
             this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(66, 152);
+            this.listView1.Location = new System.Drawing.Point(66, 125);
             this.listView1.MultiSelect = false;
             this.listView1.Name = "listView1";
             this.listView1.Size = new System.Drawing.Size(671, 260);
@@ -128,11 +129,22 @@
             this.ButtonLogOut.UseVisualStyleBackColor = true;
             this.ButtonLogOut.Click += new System.EventHandler(this.ButtonLogOut_Click);
             // 
+            // ButtonSend
+            // 
+            this.ButtonSend.Location = new System.Drawing.Point(363, 400);
+            this.ButtonSend.Name = "ButtonSend";
+            this.ButtonSend.Size = new System.Drawing.Size(75, 23);
+            this.ButtonSend.TabIndex = 14;
+            this.ButtonSend.Text = "Send";
+            this.ButtonSend.UseVisualStyleBackColor = true;
+            this.ButtonSend.Click += new System.EventHandler(this.ButtonSend_Click);
+            // 
             // BAI06
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ButtonSend);
             this.Controls.Add(this.ButtonLogOut);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.ButtonLogin);
@@ -159,5 +171,6 @@
         private System.Windows.Forms.TextBox TextBoxPassword;
         private System.Windows.Forms.TextBox TextBoxEmail;
         private System.Windows.Forms.Button ButtonLogOut;
+        private System.Windows.Forms.Button ButtonSend;
     }
 }

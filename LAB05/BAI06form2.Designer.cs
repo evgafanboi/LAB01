@@ -84,6 +84,7 @@
             this.ButtonReply.TabIndex = 4;
             this.ButtonReply.Text = "Reply";
             this.ButtonReply.UseVisualStyleBackColor = true;
+            this.ButtonReply.Click += new System.EventHandler(this.ButtonReply_Click);
             // 
             // BAI06form2
             // 

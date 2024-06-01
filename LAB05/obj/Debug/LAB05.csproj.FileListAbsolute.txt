@@ -45,3 +45,4 @@ D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\Microsoft.We
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\Microsoft.Web.WebView2.WinForms.xml
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\Microsoft.Web.WebView2.Wpf.xml
 D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.BAI06form2.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.BAI06from3.resources

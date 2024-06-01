@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using MailKit.Net.Smtp;
+using MimeKit;
 
 
 namespace LAB05
@@ -19,14 +20,17 @@ namespace LAB05
         MimeKit.InternetAddressList Senders = null;
         SmtpClient smtpClient = null;
         string Subject = null;
-        public BAI06form2(MimeKit.InternetAddressList sender, MimeKit.InternetAddressList receiver, string hTMLText,string subject,SmtpClient sendclient)
+        MimeMessage message= null;
+
+        public BAI06form2(MimeKit.InternetAddressList sender, MimeKit.InternetAddressList receiver, MimeMessage message , SmtpClient sendclient)
         {
             InitializeComponent();
             Senders = sender;
             Receivers = receiver;
-            HTMLText = hTMLText;
-            Subject = subject;
+            HTMLText = message.HtmlBody;
+            Subject = message.Subject;
             smtpClient = sendclient;
+            this.message = message;
 
             LabelFrom.Text = "From: ";
             foreach (MimeKit.MailboxAddress mailbox in Senders)
@@ -53,9 +57,19 @@ namespace LAB05
         private void ButtonReply_Click(object sender, EventArgs e)
         {
             //get the first sender and receiver and call the form3
-            //MimeKit.MailboxAddress _sender = Senders.;
-            //MimeKit.MailboxAddress _receiver = Receivers[0];
-            //BAI06from3 form3 = new BAI06from3(smtpClient, Senders, Receivers);
+            var _sender = Senders[0];
+            var _receiver = Receivers[0];
+            BAI06from3 form3 = new BAI06from3(smtpClient, _receiver, _sender, true, message);
+            form3.Show();
+        }
+
+        private void ButtonForward_Click(object sender, EventArgs e)
+        {
+            //get the first sender and receiver and call the form3
+            var _sender = Senders[0];
+            var _receiver = Receivers[0];
+            BAI06from3 form3 = new BAI06from3(smtpClient, _receiver, null, false, message, true);
+            form3.Show();
         }
     }
 }

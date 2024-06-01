@@ -33,6 +33,7 @@
             this.LabelTo = new System.Windows.Forms.Label();
             this.LabelTitle = new System.Windows.Forms.Label();
             this.ButtonReply = new System.Windows.Forms.Button();
+            this.ButtonForward = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.WebView2_Output)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,7 +79,7 @@
             // 
             // ButtonReply
             // 
-            this.ButtonReply.Location = new System.Drawing.Point(359, 406);
+            this.ButtonReply.Location = new System.Drawing.Point(307, 405);
             this.ButtonReply.Name = "ButtonReply";
             this.ButtonReply.Size = new System.Drawing.Size(75, 23);
             this.ButtonReply.TabIndex = 4;
@@ -86,11 +87,22 @@
             this.ButtonReply.UseVisualStyleBackColor = true;
             this.ButtonReply.Click += new System.EventHandler(this.ButtonReply_Click);
             // 
+            // ButtonForward
+            // 
+            this.ButtonForward.Location = new System.Drawing.Point(410, 405);
+            this.ButtonForward.Name = "ButtonForward";
+            this.ButtonForward.Size = new System.Drawing.Size(75, 23);
+            this.ButtonForward.TabIndex = 5;
+            this.ButtonForward.Text = "Forward";
+            this.ButtonForward.UseVisualStyleBackColor = true;
+            this.ButtonForward.Click += new System.EventHandler(this.ButtonForward_Click);
+            // 
             // BAI06form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.ButtonForward);
             this.Controls.Add(this.ButtonReply);
             this.Controls.Add(this.LabelTitle);
             this.Controls.Add(this.LabelTo);
@@ -111,5 +123,6 @@
         private System.Windows.Forms.Label LabelTo;
         private System.Windows.Forms.Label LabelTitle;
         private System.Windows.Forms.Button ButtonReply;
+        private System.Windows.Forms.Button ButtonForward;
     }
 }

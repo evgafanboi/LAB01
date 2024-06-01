@@ -26,10 +26,14 @@ namespace LAB05
 
         private async void ButtonLogin_Click(object sender, EventArgs e)
         {
+            ButtonLogin.Enabled = false;
+            ButtonLogOut.Enabled = true;
+            TextBoxEmail.Enabled = false;
+            TextBoxPassword.Enabled = false;
             try
             {
                 await client.ConnectAsync("imap.gmail.com", 993, true);
-                await smtpClient.ConnectAsync("smtp.gmail.com", 587, true);
+                await smtpClient.ConnectAsync("smtp.gmail.com", 465, true);
             }
             catch
             {
@@ -68,10 +72,7 @@ namespace LAB05
                 listView1.Items.Add(item);
             }
             listView1.Enabled = true;
-            ButtonLogin.Enabled = false;
-            ButtonLogOut.Enabled = true;
-            TextBoxEmail.Enabled = false;
-            TextBoxPassword.Enabled = false;
+            
         }
 
         private void ButtonLogOut_Click(object sender, EventArgs e)
@@ -97,7 +98,7 @@ namespace LAB05
                 //open the selected email
                 MimeMessage message = client.Inbox.GetMessage(listView1.SelectedItems[0].Index);
                 //MessageBox.Show(message.HtmlBody);
-                BAI06form2 form2 = new BAI06form2(message.From, message.To, message.HtmlBody,message.Subject,smtpClient);
+                BAI06form2 form2 = new BAI06form2(message.From, message.To, message,smtpClient);
                 form2.Show();
                 
             }
@@ -106,7 +107,8 @@ namespace LAB05
 
         private void ButtonSend_Click(object sender, EventArgs e)
         {
-
+            MailboxAddress from = new MailboxAddress("", TextBoxEmail.Text);
+            BAI06from3 form3 = new BAI06from3(smtpClient,from);
         }
     }
 }

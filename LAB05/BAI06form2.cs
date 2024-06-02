@@ -51,7 +51,15 @@ namespace LAB05
 
         private void WebView2_Output_CoreWebView2InitializationCompleted(object sender, Microsoft.Web.WebView2.Core.CoreWebView2InitializationCompletedEventArgs e)
         {
-            WebView2_Output.CoreWebView2.NavigateToString(HTMLText);
+            try
+            {
+                WebView2_Output.CoreWebView2.NavigateToString(HTMLText);
+            }
+            catch 
+            {
+                MessageBox.Show("Error when displaying the email content");
+                return;
+            }
         }
 
         private void ButtonReply_Click(object sender, EventArgs e)

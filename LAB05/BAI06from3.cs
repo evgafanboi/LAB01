@@ -26,6 +26,7 @@ namespace LAB05
         InternetAddress from = null;
         InternetAddress to = null;
         MimeMessage original_message = null;
+        string AttachPath = null;
         bool IsAReply = false;
         bool IsAForward = false;
         public BAI06from3(SmtpClient client, InternetAddress from, InternetAddress to = null, bool IsAReply = false, MimeMessage original_message = null, bool IsAForward = false)
@@ -62,6 +63,10 @@ namespace LAB05
             {
                     to = new MailboxAddress("", TextBoxTo.Text);
                    var message_to_send = Forward(original_message,from,to,RichTextBoxOutput.Text);
+                if(message_to_send == null)
+                {
+                    return;
+                }
                 try
                 {
                     smtpClient.Send(message_to_send);
@@ -76,7 +81,11 @@ namespace LAB05
             }
             if(IsAReply)
             {
-                    var message_to_send = Reply(original_message, from, false);
+                    var message_to_send = Reply(original_message, from, false,RichTextBoxOutput.Text);
+                if (message_to_send == null)
+                {
+                    return;
+                }
                 try
                 {
                     smtpClient.Send(message_to_send);
@@ -113,7 +122,7 @@ namespace LAB05
             MessageBox.Show("Mail sent");
         }
 
-        public static MimeMessage Forward(MimeMessage original, InternetAddress from, InternetAddress to, string message_text)
+        private MimeMessage Forward(MimeMessage original, InternetAddress from, InternetAddress to, string message_text)
         {
             var message = new MimeMessage();
             message.From.Add(from);
@@ -152,11 +161,37 @@ namespace LAB05
                 Text = message_text
             };
 
+            // create an image attachment
+                MimePart attachment = null;
+            if(CheckBoxAttachment.Checked)
+            {
+                try
+                {
+                    attachment = new MimePart("image", "gif")
+                    {
+
+                        Content = new MimeContent(File.OpenRead(AttachPath), ContentEncoding.Default),
+                        ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
+                        ContentTransferEncoding = ContentEncoding.Base64,
+                        FileName = Path.GetFileName(AttachPath)
+                    };
+                }
+                catch
+                {
+                    MessageBox.Show("Attachment inaccessible");
+                     return null;
+                }
+
+            }
 
             // create a multipart/mixed container for the text body and the forwarded message
             var multipart = new Multipart("mixed");
             multipart.Add(textPart);
             multipart.Add(rfc822);
+            if(CheckBoxAttachment.Checked)
+            {
+                multipart.Add(attachment);
+            }
 
             // set the multipart as the body of the message
             message.Body = multipart;
@@ -165,7 +200,7 @@ namespace LAB05
         }
 
 
-        public static MimeMessage Reply(MimeMessage message, InternetAddress from, bool replyToAll)
+        private MimeMessage Reply(MimeMessage message, InternetAddress from, bool replyToAll, string content_to_send)
         {
             var reply = new MimeMessage();
 
@@ -208,8 +243,11 @@ namespace LAB05
             }
 
             // quote the original message text
-            using (var quoted = new StringWriter())
-            {
+            StringWriter quoted = new StringWriter();
+            // Add the additional content
+            quoted.WriteLine(content_to_send);
+            quoted.WriteLine(); // Add an empty line before appending the qouted content
+            
                 var sender = message.Sender ?? message.From.Mailboxes.FirstOrDefault();
 
                 quoted.WriteLine("On {0}, {1} wrote:", message.Date.ToString("f"), !string.IsNullOrEmpty(sender.Name) ? sender.Name : sender.Address);
@@ -224,13 +262,61 @@ namespace LAB05
                     }
                 }
 
-                reply.Body = new TextPart("plain")
+
+                TextPart textPart = new TextPart("plain")
                 {
                     Text = quoted.ToString()
                 };
-            }
+
+                var multipart = new Multipart("mixed");
+                multipart.Add(textPart);
+                if(CheckBoxAttachment.Checked)
+                {
+                    try
+                    {
+                        MimePart attachment = new MimePart("image", "gif")
+                        {
+                            Content = new MimeContent(File.OpenRead(AttachPath), ContentEncoding.Default),
+                            ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
+                            ContentTransferEncoding = ContentEncoding.Base64,
+                            FileName = Path.GetFileName(AttachPath)
+                        };
+                        multipart.Add(attachment);
+                    }
+                    catch
+                    {
+                        MessageBox.Show("Attachment inaccessible");
+                        return null;
+                    }
+                }
+            
+            reply.Body = multipart;
 
             return reply;
+        }
+
+        private void CheckBoxAttachment_CheckedChanged(object sender, EventArgs e)
+        {
+            if(CheckBoxAttachment.Checked)
+            {
+                OpenFileDialog openFileDialog = new OpenFileDialog();
+                openFileDialog.InitialDirectory = "c:\\";
+                openFileDialog.Filter = "png files (*.png)|*.png|gif files (*.gif)|*.gif";
+                openFileDialog.FilterIndex = 2;
+                openFileDialog.RestoreDirectory = true;
+
+                if (openFileDialog.ShowDialog() == DialogResult.OK)
+                {
+                    //Get the path 
+                    AttachPath = openFileDialog.FileName;
+                    CheckBoxAttachment.Checked = true;
+                }
+                else
+                {
+                    CheckBoxAttachment.Checked = false;
+                }
+
+            }
         }
     }
 }

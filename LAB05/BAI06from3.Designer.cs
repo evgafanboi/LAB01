@@ -36,6 +36,7 @@
             this.TextBoxTo = new System.Windows.Forms.TextBox();
             this.TextBoxSubject = new System.Windows.Forms.TextBox();
             this.RichTextBoxOutput = new System.Windows.Forms.RichTextBox();
+            this.CheckBoxAttachment = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // ButtonSend
@@ -107,11 +108,23 @@
             this.RichTextBoxOutput.TabIndex = 13;
             this.RichTextBoxOutput.Text = "";
             // 
+            // CheckBoxAttachment
+            // 
+            this.CheckBoxAttachment.AutoSize = true;
+            this.CheckBoxAttachment.Location = new System.Drawing.Point(40, 411);
+            this.CheckBoxAttachment.Name = "CheckBoxAttachment";
+            this.CheckBoxAttachment.Size = new System.Drawing.Size(80, 17);
+            this.CheckBoxAttachment.TabIndex = 14;
+            this.CheckBoxAttachment.Text = "Attachment";
+            this.CheckBoxAttachment.UseVisualStyleBackColor = true;
+            this.CheckBoxAttachment.CheckedChanged += new System.EventHandler(this.CheckBoxAttachment_CheckedChanged);
+            // 
             // BAI06from3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.CheckBoxAttachment);
             this.Controls.Add(this.RichTextBoxOutput);
             this.Controls.Add(this.TextBoxSubject);
             this.Controls.Add(this.TextBoxTo);
@@ -137,5 +150,6 @@
         private System.Windows.Forms.TextBox TextBoxTo;
         private System.Windows.Forms.TextBox TextBoxSubject;
         private System.Windows.Forms.RichTextBox RichTextBoxOutput;
+        private System.Windows.Forms.CheckBox CheckBoxAttachment;
     }
 }

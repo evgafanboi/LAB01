@@ -28,5 +28,16 @@ namespace LAB05
             BAI06 bAI06 = new BAI06();
             bAI06.Show();
         }
+
+        private void ButtonBai03_Click(object sender, EventArgs e)
+        {
+            BAI03 f3 = new BAI03();
+            f3.Show();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

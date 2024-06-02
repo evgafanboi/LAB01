@@ -103,14 +103,46 @@ namespace LAB05
             {
                 to = new MailboxAddress("",TextBoxTo.Text);
             }
-            
-            message.From.Add(from);
-            message.To.Add(to);
-            message.Subject = TextBoxSubject.Text;
-            message.Body = new TextPart("plain") // plain text
+
+            TextPart text = new TextPart("plain") // plain text
             {
                 Text = RichTextBoxOutput.Text
             };
+
+            MimePart attachment = null;
+            if (CheckBoxAttachment.Checked)
+            {
+                try
+                {
+                    attachment = new MimePart("image", "gif")
+                    {
+
+                        Content = new MimeContent(File.OpenRead(AttachPath), ContentEncoding.Default),
+                        ContentDisposition = new ContentDisposition(ContentDisposition.Attachment),
+                        ContentTransferEncoding = ContentEncoding.Base64,
+                        FileName = Path.GetFileName(AttachPath)
+                    };
+                }
+                catch
+                {
+                    MessageBox.Show("Attachment inaccessible");
+                    return;
+                }
+
+            }
+
+            var multipart = new Multipart("mixed");
+            multipart.Add(text);
+            if (CheckBoxAttachment.Checked)
+            {
+                multipart.Add(attachment);
+            }
+
+            message.From.Add(from);
+            message.To.Add(to);
+            message.Subject = TextBoxSubject.Text;
+            message.Body = multipart; 
+
             try
             {
                 smtpClient.Send(message);

@@ -62,13 +62,31 @@ namespace LAB05
             {
                     to = new MailboxAddress("", TextBoxTo.Text);
                    var message_to_send = Forward(original_message,from,to,RichTextBoxOutput.Text);
+                try
+                {
                     smtpClient.Send(message_to_send);
+                }
+                catch
+                {
+                    MessageBox.Show("Mail failed to be sent");
                     return;
+                }
+                    MessageBox.Show("Mail sent");
+                return;
             }
             if(IsAReply)
             {
                     var message_to_send = Reply(original_message, from, false);
+                try
+                {
                     smtpClient.Send(message_to_send);
+                }
+                catch
+                {
+                    MessageBox.Show("Mail failed to be sent");
+                    return;
+                }
+                MessageBox.Show("Mail sent");
                     return;
             }
             var message = new MimeMessage();
@@ -76,17 +94,23 @@ namespace LAB05
             {
                 to = new MailboxAddress("",TextBoxTo.Text);
             }
-            else
-            {
-                message.From.Add(from);
-                message.To.Add(to);
-            }
+            
+            message.From.Add(from);
+            message.To.Add(to);
             message.Subject = TextBoxSubject.Text;
             message.Body = new TextPart("plain") // plain text
             {
                 Text = RichTextBoxOutput.Text
             };
-            smtpClient.Send(message);
+            try
+            {
+                smtpClient.Send(message);
+            }
+            catch
+            {
+                MessageBox.Show("Mail failed to be sent");
+            }
+            MessageBox.Show("Mail sent");
         }
 
         public static MimeMessage Forward(MimeMessage original, InternetAddress from, InternetAddress to, string message_text)

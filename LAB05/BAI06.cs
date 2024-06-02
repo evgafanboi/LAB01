@@ -72,7 +72,7 @@ namespace LAB05
                 listView1.Items.Add(item);
             }
             listView1.Enabled = true;
-            
+            ButtonSend.Enabled = true;
         }
 
         private void ButtonLogOut_Click(object sender, EventArgs e)
@@ -108,7 +108,8 @@ namespace LAB05
         private void ButtonSend_Click(object sender, EventArgs e)
         {
             MailboxAddress from = new MailboxAddress("", TextBoxEmail.Text);
-            BAI06from3 form3 = new BAI06from3(smtpClient,from);
+            BAI06from3 form3 = new BAI06from3(smtpClient, from);
+            form3.Show();
         }
     }
 }

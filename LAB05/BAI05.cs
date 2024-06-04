@@ -16,6 +16,7 @@ using MailKit.Net.Pop3;
 using MailKit.Search;
 using System.Linq;
 using static System.Data.Entity.Migrations.Model.UpdateDatabaseOperation;
+using static System.Windows.Forms.LinkLabel;
 
 namespace LAB05
 {
@@ -31,38 +32,27 @@ namespace LAB05
             _context = context;
         }
 
-        private async void Loginbtn_Click(object sender, EventArgs e)   //cilb sxxp wstx bzpy   //sm0kew33d3v3ryd4y@gmail.com
+        private async void Loginbtn_Click(object sender, EventArgs e)   //vtmk ktps hnlo cuki   //sm0kew33d3v3ryd4y@gmail.com
         {
                 if (listView1.Items.Count > 0)
                     listView1.Items.Clear();
                 ImapClient client = new ImapClient();
-                try
-                {
-                    await client.ConnectAsync("imap.gmail.com", 993, true);
-                }
-                catch
-                {
-                    MessageBox.Show("Can't connect to server");
-                }
-                //auth
-                try
-                {
-                    await client.AuthenticateAsync(TextBoxEmail.Text, TextBoxPassword.Text);
-                }
-                catch
-                {
-                    MessageBox.Show("Can't authenticate");
-                }
+                client.Connect("imap.gmail.com", 993, true);
+                //  auth
+                client.Authenticate(TextBoxEmail.Text, TextBoxPassword.Text);
 
-                var inbox = client.Inbox;
-                inbox.Open(FolderAccess.ReadWrite);
+                client.Inbox.Open(MailKit.FolderAccess.ReadOnly);
 
                 Loginbtn.Text = "Reload";
 
                 emails = new List<MimeMessage>();
-                foreach (var uid in inbox.Search(SearchQuery.NotSeen))
+                for (int i = 0; i < 10 && i < client.Inbox.Count; i++)
                 {
-                    var message = inbox.GetMessage(uid);
+                    var message = client.Inbox.GetMessage(i);
+                var senderName = message.From.Mailboxes.FirstOrDefault()?.Name;
+                if (string.IsNullOrWhiteSpace(senderName))
+                    senderName = "Người ẩn danh";
+
                     if (message.Subject == "Đóng góp món ăn")
                     {
                         var email = new Email
@@ -70,25 +60,34 @@ namespace LAB05
                             Subject = message.Subject,
                             Body = message.TextBody,
                             IsRead = true,
-                            sender = message.Sender.ToString()
+                            sender = senderName
                         };
                         _context.Email.Add(email);
                         await _context.SaveChangesAsync();
 
                         var lines = message.TextBody.Split(new[] { '\r', '\n' }, StringSplitOptions.RemoveEmptyEntries);
-                        for (int i = 0; i < lines.Length; i += 2)
+                    for (int j = 0; j < lines.Length; j++)
+                    {
+                        var parts = lines[j].Split(new[] { ';' }, 2, StringSplitOptions.RemoveEmptyEntries);
+                        if (parts.Length == 2)
                         {
+                            //items.Add(parts[0].Trim());
+                            //items.Add(parts[1].Trim());
+                            ListViewItem item = new ListViewItem(message.Subject);
+                            item.SubItems.Add(message.From.ToString());
+                            item.SubItems.Add(message.Date.ToString());
                             var monAn = new MonAn
                             {
-                                TenMonAn = lines[i],
-                                imageURI = lines[i + 1],
+                                TenMonAn = parts[0],
+                                imageURI = parts[1],
                                 Id_Email = email.Id_Email
                             };
                             _context.MonAn.Add(monAn);
                         }
+                    }
 
                         _context.SaveChanges();
-                        inbox.AddFlags(uid, MessageFlags.Seen, true);
+                        client.Inbox.AddFlags(i, MessageFlags.Seen, true);
                     }
 
                 client.Disconnect(true);

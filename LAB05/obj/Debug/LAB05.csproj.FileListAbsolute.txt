@@ -107,3 +107,5 @@ A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.exe
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.pdb
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\BAI05.sqlite3
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Data.SQLite.EF6.Migrations.dll
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI01.resources
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI01pw.resources

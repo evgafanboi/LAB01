@@ -49,5 +49,11 @@ namespace LAB05
                 f5.Show();
             }
         }
+
+        private void ButtonBai01_Click(object sender, EventArgs e)
+        {
+            BAI01 f5 = new BAI01();
+            f5.Show();
+        }
     }
 }

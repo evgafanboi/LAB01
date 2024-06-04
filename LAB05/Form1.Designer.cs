@@ -47,6 +47,7 @@
             this.ButtonBai01.TabIndex = 0;
             this.ButtonBai01.Text = "Bài 1";
             this.ButtonBai01.UseVisualStyleBackColor = true;
+            this.ButtonBai01.Click += new System.EventHandler(this.ButtonBai01_Click);
             // 
             // ButtonBai02
             // 

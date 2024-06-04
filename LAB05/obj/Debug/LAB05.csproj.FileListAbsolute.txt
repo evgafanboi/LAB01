@@ -107,5 +107,21 @@ A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.exe
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.pdb
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\BAI05.sqlite3
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Data.SQLite.EF6.Migrations.dll
+<<<<<<< HEAD
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI01.resources
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI01pw.resources
+=======
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\BAI05.sqlite3
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\EntityFramework.dll
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\EntityFramework.SqlServer.dll
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\System.Data.SQLite.dll
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\System.Data.SQLite.EF6.dll
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\System.Data.SQLite.EF6.Migrations.dll
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\System.Data.SQLite.Linq.dll
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\EntityFramework.xml
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\EntityFramework.SqlServer.xml
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\bin\Debug\System.Data.SQLite.xml
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.BAI03.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.BAI03View.resources
+D:\Tai_Lieu_Hoc\VisualStudioProjects\LAbsauna\LAB01\LAB05\obj\Debug\LAB05.BAI05.resources
+>>>>>>> 235011dada869e3e969a05272412c782bd44cbc8

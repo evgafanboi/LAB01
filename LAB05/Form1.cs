@@ -39,5 +39,15 @@ namespace LAB05
         {
             Close();
         }
+
+        private void ButtonBai05_Click(object sender, EventArgs e)
+        {
+            using (var context = new BAI05DBContext())
+            {
+                context.Database.Initialize(false);
+                BAI05 f5 = new BAI05(context);
+                f5.Show();
+            }
+        }
     }
 }

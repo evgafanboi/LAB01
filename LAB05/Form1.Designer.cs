@@ -41,7 +41,7 @@
             // ButtonBai01
             // 
             this.ButtonBai01.Location = new System.Drawing.Point(57, 137);
-            this.ButtonBai01.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonBai01.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonBai01.Name = "ButtonBai01";
             this.ButtonBai01.Size = new System.Drawing.Size(131, 46);
             this.ButtonBai01.TabIndex = 0;
@@ -51,7 +51,7 @@
             // ButtonBai02
             // 
             this.ButtonBai02.Location = new System.Drawing.Point(258, 137);
-            this.ButtonBai02.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonBai02.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonBai02.Name = "ButtonBai02";
             this.ButtonBai02.Size = new System.Drawing.Size(131, 46);
             this.ButtonBai02.TabIndex = 1;
@@ -62,7 +62,7 @@
             // ButtonBai03
             // 
             this.ButtonBai03.Location = new System.Drawing.Point(57, 208);
-            this.ButtonBai03.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonBai03.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonBai03.Name = "ButtonBai03";
             this.ButtonBai03.Size = new System.Drawing.Size(131, 45);
             this.ButtonBai03.TabIndex = 2;
@@ -73,7 +73,7 @@
             // ButtonBai04
             // 
             this.ButtonBai04.Location = new System.Drawing.Point(258, 208);
-            this.ButtonBai04.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonBai04.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonBai04.Name = "ButtonBai04";
             this.ButtonBai04.Size = new System.Drawing.Size(131, 45);
             this.ButtonBai04.TabIndex = 3;
@@ -83,7 +83,7 @@
             // ButtonBai06
             // 
             this.ButtonBai06.Location = new System.Drawing.Point(258, 277);
-            this.ButtonBai06.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonBai06.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonBai06.Name = "ButtonBai06";
             this.ButtonBai06.Size = new System.Drawing.Size(131, 44);
             this.ButtonBai06.TabIndex = 4;
@@ -94,12 +94,13 @@
             // ButtonBai05
             // 
             this.ButtonBai05.Location = new System.Drawing.Point(57, 277);
-            this.ButtonBai05.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ButtonBai05.Margin = new System.Windows.Forms.Padding(4);
             this.ButtonBai05.Name = "ButtonBai05";
             this.ButtonBai05.Size = new System.Drawing.Size(131, 44);
             this.ButtonBai05.TabIndex = 5;
             this.ButtonBai05.Text = "Bài 5";
             this.ButtonBai05.UseVisualStyleBackColor = true;
+            this.ButtonBai05.Click += new System.EventHandler(this.ButtonBai05_Click);
             // 
             // label1
             // 
@@ -137,7 +138,7 @@
             this.Controls.Add(this.ButtonBai03);
             this.Controls.Add(this.ButtonBai02);
             this.Controls.Add(this.ButtonBai01);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);

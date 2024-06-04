@@ -53,12 +53,17 @@ A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\LAB05.exe.config
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\LAB05.exe
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\LAB05.pdb
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\BouncyCastle.Cryptography.dll
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\EntityFramework.dll
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\EntityFramework.SqlServer.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MailKit.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\Microsoft.Web.WebView2.Core.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\Microsoft.Web.WebView2.WinForms.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\Microsoft.Web.WebView2.Wpf.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MimeKit.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Buffers.dll
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Data.SQLite.dll
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Data.SQLite.EF6.dll
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Data.SQLite.Linq.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Formats.Asn1.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Memory.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Numerics.Vectors.dll
@@ -66,6 +71,8 @@ A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Runtime.CompilerServices.
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Threading.Tasks.Extensions.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.ValueTuple.dll
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\BouncyCastle.Cryptography.xml
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\EntityFramework.xml
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\EntityFramework.SqlServer.xml
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MailKit.pdb
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MailKit.xml
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MailKit.dll.config
@@ -76,6 +83,7 @@ A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MimeKit.pdb
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MimeKit.xml
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\MimeKit.dll.config
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Buffers.xml
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Data.SQLite.xml
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Formats.Asn1.xml
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Memory.xml
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Numerics.Vectors.xml
@@ -85,6 +93,8 @@ A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.ValueTuple.xml
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.csproj.AssemblyReference.cache
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI02.resources
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI03.resources
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI03View.resources
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI05.resources
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI06.resources
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI06form2.resources
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI06from3.resources
@@ -95,4 +105,5 @@ A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.csproj.CoreCompileInputs.c
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.csproj.CopyComplete
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.exe
 A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.pdb
-A:\Programs\VS 2022\LAB05\LAB01\LAB05\obj\Debug\LAB05.BAI03View.resources
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\BAI05.sqlite3
+A:\Programs\VS 2022\LAB05\LAB01\LAB05\bin\Debug\System.Data.SQLite.EF6.Migrations.dll

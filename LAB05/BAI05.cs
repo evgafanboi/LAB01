@@ -1,22 +1,17 @@
-﻿using System;
+﻿using MailKit;
+using MailKit.Net.Imap;
+using MailKit.Net.Smtp;
+using MimeKit;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MailKit;
-using MimeKit;
-using System.Data.Entity;
-using System.Runtime.Remoting.Contexts;
-using MailKit.Net.Imap;
-using MailKit.Net.Pop3;
-using MailKit.Search;
-using System.Linq;
-using static System.Data.Entity.Migrations.Model.UpdateDatabaseOperation;
-using static System.Windows.Forms.LinkLabel;
 
 namespace LAB05
 {
@@ -90,9 +85,9 @@ namespace LAB05
                         client.Inbox.AddFlags(i, MessageFlags.Seen, true);
                     }
 
-                client.Disconnect(true);
 
                 }
+                client.Disconnect(true);
         }
 
         private void Exitbtn_Click(object sender, EventArgs e)

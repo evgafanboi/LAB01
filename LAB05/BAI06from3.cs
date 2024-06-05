@@ -150,6 +150,7 @@ namespace LAB05
             catch
             {
                 MessageBox.Show("Mail failed to be sent");
+                return;
             }
             MessageBox.Show("Mail sent");
         }

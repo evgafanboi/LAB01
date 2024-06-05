@@ -32,6 +32,7 @@ namespace LAB05
             catch
             {
                 MessageBox.Show("Can't connect to server");
+                return;
             }
             //auth
             try
@@ -41,6 +42,7 @@ namespace LAB05
             catch
             {
                 MessageBox.Show("Can't authenticate");
+                return;
             }
             try
             {
@@ -49,6 +51,7 @@ namespace LAB05
             catch
             {
                 MessageBox.Show("Can't open inbox");
+                return;
             }
             //read the first 10 email or less
             for (int i = 0; i < 10 && i < client.Inbox.Count; i++)

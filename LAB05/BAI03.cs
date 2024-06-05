@@ -64,7 +64,7 @@ namespace LAB05
 
                 for (int i = 0; i < limitPicker.Value && i < client.Inbox.Count; i++)
                 {
-                    MimeMessage message = await client.Inbox.GetMessageAsync(i);
+                    MimeMessage message = await client.Inbox.GetMessageAsync(client.Inbox.Count - 1 - i);
                     emails.Add(message);
                     ListViewItem item = new ListViewItem(message.Subject);
                     item.SubItems.Add(message.From.ToString());

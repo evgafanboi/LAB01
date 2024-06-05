@@ -32,28 +32,28 @@ namespace LAB05
             _context = context;
         }
 
-        private async void Loginbtn_Click(object sender, EventArgs e)   //vtmk ktps hnlo cuki   //sm0kew33d3v3ryd4y@gmail.com
+        private async void Loginbtn_Click(object sender, EventArgs e)
         {
-                if (listView1.Items.Count > 0)
-                    listView1.Items.Clear();
+                if (OutputListview.Items.Count > 0)
+                    OutputListview.Items.Clear();
                 ImapClient client = new ImapClient();
-                client.Connect("imap.gmail.com", 993, true);
+                await client.ConnectAsync("imap.gmail.com", 993, true);
                 //  auth
-                client.Authenticate(TextBoxEmail.Text, TextBoxPassword.Text);
+                await client.AuthenticateAsync(TextBoxEmail.Text, TextBoxPassword.Text);
 
-                client.Inbox.Open(MailKit.FolderAccess.ReadOnly);
+                await client.Inbox.OpenAsync(MailKit.FolderAccess.ReadOnly);
 
                 Loginbtn.Text = "Reload";
 
                 emails = new List<MimeMessage>();
-                for (int i = 0; i < 10 && i < client.Inbox.Count; i++)
+                for (int i = 0; i < 3 && i < client.Inbox.Count; i++)
                 {
-                    var message = client.Inbox.GetMessage(i);
+                    var message = client.Inbox.GetMessage(client.Inbox.Count - i - 1);
                 var senderName = message.From.Mailboxes.FirstOrDefault()?.Name;
                 if (string.IsNullOrWhiteSpace(senderName))
                     senderName = "Người ẩn danh";
 
-                    if (message.Subject == "Đóng góp món ăn")
+                    if (message.Subject.Contains(""))
                     {
                         var email = new Email
                         {
@@ -62,6 +62,7 @@ namespace LAB05
                             IsRead = true,
                             sender = senderName
                         };
+                    emails.Add(message);
                         _context.Email.Add(email);
                         await _context.SaveChangesAsync();
 
@@ -76,6 +77,7 @@ namespace LAB05
                             ListViewItem item = new ListViewItem(message.Subject);
                             item.SubItems.Add(message.From.ToString());
                             item.SubItems.Add(message.Date.ToString());
+                            OutputListview.Items.Add(item);
                             var monAn = new MonAn
                             {
                                 TenMonAn = parts[0],
@@ -89,10 +91,8 @@ namespace LAB05
                         _context.SaveChanges();
                         client.Inbox.AddFlags(i, MessageFlags.Seen, true);
                     }
-
-                client.Disconnect(true);
-
                 }
+
         }
 
         private void Exitbtn_Click(object sender, EventArgs e)

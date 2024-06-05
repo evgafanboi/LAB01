@@ -82,7 +82,6 @@
             // 
             this.NameBox.Location = new System.Drawing.Point(160, 220);
             this.NameBox.Name = "NameBox";
-            this.NameBox.PasswordChar = '#';
             this.NameBox.Size = new System.Drawing.Size(237, 22);
             this.NameBox.TabIndex = 6;
             // 
@@ -91,7 +90,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
-            this.ClientSize = new System.Drawing.Size(555, 341);
+            this.ClientSize = new System.Drawing.Size(562, 341);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.NameBox);
             this.Controls.Add(this.Sendbtn);

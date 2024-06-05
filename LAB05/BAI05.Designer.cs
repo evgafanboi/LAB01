@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.Exitbtn = new System.Windows.Forms.Button();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.OutputListview = new System.Windows.Forms.ListView();
             this.Email = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Sender = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.Date = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
@@ -52,20 +52,20 @@
             this.Exitbtn.UseVisualStyleBackColor = true;
             this.Exitbtn.Click += new System.EventHandler(this.Exitbtn_Click);
             // 
-            // listView1
+            // OutputListview
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.OutputListview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.Email,
             this.Sender,
             this.Date});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(37, 186);
-            this.listView1.Margin = new System.Windows.Forms.Padding(4);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(893, 335);
-            this.listView1.TabIndex = 23;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
+            this.OutputListview.HideSelection = false;
+            this.OutputListview.Location = new System.Drawing.Point(37, 186);
+            this.OutputListview.Margin = new System.Windows.Forms.Padding(4);
+            this.OutputListview.Name = "OutputListview";
+            this.OutputListview.Size = new System.Drawing.Size(893, 335);
+            this.OutputListview.TabIndex = 23;
+            this.OutputListview.UseCompatibleStateImageBehavior = false;
+            this.OutputListview.View = System.Windows.Forms.View.Details;
             // 
             // Email
             // 
@@ -142,7 +142,7 @@
             this.BackColor = System.Drawing.Color.DarkOliveGreen;
             this.ClientSize = new System.Drawing.Size(962, 553);
             this.Controls.Add(this.Exitbtn);
-            this.Controls.Add(this.listView1);
+            this.Controls.Add(this.OutputListview);
             this.Controls.Add(this.Loginbtn);
             this.Controls.Add(this.LabelPassword);
             this.Controls.Add(this.LabelEmail);
@@ -157,7 +157,7 @@
 
         #endregion
         private System.Windows.Forms.Button Exitbtn;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView OutputListview;
         private System.Windows.Forms.ColumnHeader Email;
         private System.Windows.Forms.ColumnHeader Sender;
         private System.Windows.Forms.ColumnHeader Date;
